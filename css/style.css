@@ -12,7 +12,7 @@ html {
 
 
 .main-heading{
-    background-image: url(img/bg1.jpg);
+    background-image: url("../img/bg1.jpg");
     background-repeat: repeat-x;
     background-attachment: fixed;
     height : 40vh; width: 100%;
@@ -206,6 +206,7 @@ a.active {
     font-weight: 300;  
     font-family: Shadows Into Light ;
     margin-top: -10px;
+    color : #800000;
 }
 
 .about {
