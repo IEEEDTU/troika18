@@ -18,7 +18,7 @@
 
 ```
  ## Color Scheme
- ![Color Scheme](https://user-images.githubusercontent.com/14962324/33901243-3549e446-df97-11e7-91f5-9f0f9db5d1d7.jpeg
+ ![Color Scheme](https://user-images.githubusercontent.com/14962324/33901243-3549e446-df97-11e7-91f5-9f0f9db5d1d7.jpeg)
  
  ## Background Images
  
