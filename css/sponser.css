@@ -1,0 +1,107 @@
+body{
+    overflow-x: hidden;
+}
+
+li>a{
+    font-size: 25px;
+    border-radius: 10px;
+
+}
+.nav-item>.nav-link:hover{
+    background-color: aqua;
+    color: black;
+}
+.active{
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+.time{
+    height: 100px;
+    font-size: 22px;
+    font-weight:bold;
+    text-align: center;
+    color: aqua;
+    border:solid aqua 3px;
+    border-radius:10%;
+    padding-top:20px;
+    margin: 10px;
+}
+#abc{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    /*background-attachment: fixed;*/
+}
+#troika{
+    display:block;
+    margin: auto;
+    height: 300px;
+    filter:brightness(100%);
+}
+#footer{
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: aqua;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 560px) {
+    #troika{
+        height: 250px;
+        transform: scaleX(0.7);
+    }
+}
+#sponserTitle{
+    color: green;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Yanone Kaffeesatz', 'sans-serif';
+}
+#sponserbox{
+    background-image: url("../img/sponserbg.jpg");
+    margin-top: -23px;
+    margin-bottom: -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+}
+.contact{
+    text-align: right;
+    font-size: 35px;
+    font-family: 'Yanone Kaffeesatz', 'sans-serif';
+    color: white;font-weight: bold;border-bottom: solid 2px white;
+}
+.contact2{
+    font-size: 30px;
+    font-family: 'Yanone Kaffeesatz', 'sans-serif';
+    color: yellow;
+}
+#cb{
+    height: 110px;width: 300px;display: block;margin: auto;
+}
+@media only screen and (max-width: 325px) {
+    #sponserTitle{
+        font-size: 45px;
+    }
+    #cb{
+        margin-left: -15px;
+    }
+}
+@media only screen and (min-width: 991px) and (max-width: 1321px){
+    #become{
+        width: 30%;
+    }
+    #contactbox{
+        width: 70%;
+    }
+}
+@media only screen and (min-width:465px ) and (max-width:992px ){
+    #becomeSponser{
+        display: inline-block;
+        margin: auto;
+    }
+
+}
