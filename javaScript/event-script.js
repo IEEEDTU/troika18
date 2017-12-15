@@ -1,25 +1,3 @@
-/**	
-	* Template Name: Eventoz
-	* Version: 1.0	
-	* Template Scripts
-	* Author: MarkUps
-	* Author URI: http://www.markups.io/
-
-	Custom JS
-	
-	1. FIXED MENU
-	2. EVENT TIME COUNTER
-	3. MENU SMOOTH SCROLLING
-	4. VIDEO POPUP
-	5. SPEAKERS SLIDEER ( SLICK SLIDER )
-	6. BOOTSTRAP ACCORDION 
-	7. MOBILE MENU CLOSE  
-	
-	
-**/
-
-
-
 (function( $ ){
 
 
