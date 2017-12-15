@@ -8,10 +8,6 @@ html {
 body {
     font-family: Quicksand;
     background-color: rgb(14, 13, 13);
-    /*background-image: url(../img/ScrollBG.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;*/
 }
 
 a,
@@ -145,13 +141,6 @@ a.active {
 
 .first {
     position: relative;
-    /*background-image: url(../img/BG5.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-color: rgb(14, 13, 13);*/
 }
 
 .background-image-main {
@@ -180,22 +169,12 @@ a.active {
 }
 
 .main-heading{
-    /*background-image: url(../img/BG11.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;*/
     height : 40vh; width: 100%;
 }
 
 .sub-main{
     width:100%;
     height:58vh;
-    /*background-image: url(../img/BG5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;*/
 }
 
 .header-divs {
@@ -252,14 +231,6 @@ a.active {
     .buttons {
         padding-left: 10px;
     }
-
-    /*.first {
-        background-image: url(../img/ScrollBG1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }*/
 }
 
 
@@ -296,11 +267,6 @@ div {
     border-top: 6px solid #45A29E;
     border-bottom: 6px solid #45A29E;
     border-radius: 20px;
-    /*background-image: url(../img/ScrollBG.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;*/
 }
 
 .background-image-about {
@@ -400,14 +366,6 @@ div {
     border-top: 6px solid #45A29E;
    /* border-bottom: 6px solid #45A29E;*/
     border-radius: 20px;
-    /*background-image: url(../img/BG11.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-color: rgb(14, 13, 13);
-    background-position-y: 30px;*/
 }
 
 .background-image-contact {
