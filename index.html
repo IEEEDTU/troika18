@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+
+  <script type="text/javascript">
+			console.log("%cTroika'18", "background: white; color: black; font-size: x-large");
+			console.log("  -Developed using A-frame.");
+			console.log("%c>> Developer", "background: white; color: black; font-size: small");
+			console.log("%c----> SAGNIK BHOWMICK", "background: white; color: black; font-size: small");
+  </script>
+
+  <meta charset="utf-8">
+  <title>Troika'18</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+  <script src="./js/aframe.min.js"></script>
+</head>
+<body>
+	<a-scene>
+    <a-assets>
+      <a-asset-item id="earth-obj" src="./assets/earth-obj/earth.obj"></a-asset-item>
+      <a-asset-item id="earth-mtl" src="./assets/earth-obj/earth.mtl"></a-asset-item>
+      <a-asset-item id="moon-obj" src="./assets/the-moon-sharp/moon.obj"></a-asset-item>
+      <a-asset-item id="moon-mtl" src="./assets/the-moon-sharp/moon.mtl"></a-asset-item>
+      <a-asset-item id="sat-obj" src="./assets/nasa-aqua-satellite-obj/nasa-aqua-satellite.obj"></a-asset-item>
+      <a-asset-item id="sat-mtl" src="./assets/nasa-aqua-satellite-obj/nasa-aqua-satellite.mtl"></a-asset-item>
+    </a-assets>
+    <a-sky src="./assets/space.jpg">
+    </a-sky>
+    <a-entity obj-model="obj: #earth-obj; mtl: #earth-mtl" position="0 1.5 -2">
+      <a-animation attribute="rotation"
+             dur="10000"
+             to="0 360 0"
+             repeat="indefinite"></a-animation>
+    </a-entity>
+    <a-entity obj-model="obj: #moon-obj; mtl: #moon-mtl" position="-15 1.5 -2">
+      <a-animation attribute="rotation"
+             dur="50000"
+             to="0 360 0"
+             repeat="indefinite"></a-animation>
+    </a-entity>
+    <a-entity obj-model="obj: #sat-obj; mtl: #sat-mtl" position="20 1.5 -15" scale="0.5 0.5 0.5">
+    </a-entity>
+  </a-scene>
+</body>
+</html>
