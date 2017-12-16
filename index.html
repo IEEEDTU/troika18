@@ -13,9 +13,25 @@
   <title>Troika'18</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
   <script src="./js/aframe.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-	<a-scene>
+
+
+  <div class="cube-wrapper">
+    <div class="cube-folding">
+      <span class="leaf1"></span>
+      <span class="leaf2"></span>
+      <span class="leaf3"></span>
+      <span class="leaf4"></span>
+    </div>
+    <span class="loading" data-name="Loading">Unloading ...</span>
+  </div>
+
+  <a-scene>
     <a-assets>
       <a-asset-item id="earth-obj" src="./assets/earth-obj/earth.obj"></a-asset-item>
       <a-asset-item id="earth-mtl" src="./assets/earth-obj/earth.mtl"></a-asset-item>
