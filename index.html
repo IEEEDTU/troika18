@@ -47,13 +47,15 @@
 			<!-- <source src="horse.mp3" type="audio/mpeg"> -->
 		</audio>
 
-
-
-    <script type="text/javascript">
-    document.querySelector("#satellite").addEventListener('click', () => {
-        console.log('success');
-      });
-
+    <script>
+      var t = 0;
+      function render() {
+        t += 0.01;
+        requestAnimationFrame(render);
+        satellite.setAttribute('position', (5*Math.sin(t))+ ' 1.5 ' +(5*Math.cos(t)-2));
+        moon.setAttribute('position', (11*Math.cos(t))+ ' 1.5 ' +(11*Math.sin(t)-2));
+            }
+      render()
     </script>
 
 
@@ -68,19 +70,16 @@
     </a-assets>
     <a-sky src="./assets/space.jpg">
     </a-sky>
+    <a-entity light="type: ambient; color: #FFFFFF"></a-entity>
     <a-entity obj-model="obj: #earth-obj; mtl: #earth-mtl" position="0 1.5 -2" scale="1.5 1.5 1.5">
       <a-animation attribute="rotation"
              dur="10000"
              to="0 360 0"
              repeat="indefinite"></a-animation>
     </a-entity>
-    <a-entity obj-model="obj: #moon-obj; mtl: #moon-mtl" position="-11 1.5 -2" scale="0.5 0.5 0.5">
-      <a-animation attribute="rotation"
-             dur="50000"
-             to="0 360 0"
-             repeat="indefinite"></a-animation>
+    <a-entity id="moon" obj-model="obj: #moon-obj; mtl: #moon-mtl" scale="0.5 0.5 0.5">
     </a-entity>
-    <a-entity id="satellite" obj-model="obj: #sat-obj; mtl: #sat-mtl" position="5 1.5 -2" scale="0.1 0.1 0.1">
+    <a-entity id="satellite" obj-model="obj: #sat-obj; mtl: #sat-mtl" scale="0.1 0.1 0.1">
     </a-entity>
   </a-scene>
 </body>
