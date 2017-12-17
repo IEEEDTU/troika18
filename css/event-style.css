@@ -339,17 +339,22 @@ button:focus {
 }
 
 #mu-hero .navbar-default .navbar-brand {
-	padding: 15px 15px;
 	font-size: 28px;
 	line-height: 20px;
 }
 
-.mu-navbar .mu-menu li a {
-	color: #C5C6C7;
-	-webkit-transition: all 0.5s;
+.mu-navbar .mu-menu li a{
+	color: #C5C6C7 !important;
+	padding: 20px 25px;
+}
+
+
+.mu-navbar .mu-menu li a, .mu-navbar .mu-menu li a:before, .mu-navbar .mu-menu li a:after{
+	webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
+
 
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:focus, 
@@ -357,6 +362,38 @@ button:focus {
 	color: #fff;
 }
 
+.mu-navbar .mu-menu li a:hover {
+	color: white !important;
+}
+
+.mu-navbar .mu-menu li a:before{
+  position: absolute; 
+  left: 0;
+  right: 0;
+  top:10px;
+  margin: auto;
+  width: 0%;
+  content: '';
+  background: #66FCF1;
+  height: 2px;
+  color:transparent;
+}
+
+.mu-navbar .mu-menu li a:after{
+  position: absolute; 
+  bottom:8px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '';
+  background: #66FCF1;
+  height: 2px;
+  color:transparent;
+}
+.mu-navbar .mu-menu li a:hover:after,.mu-navbar .mu-menu li a:hover:before {
+  width: 70%;
+}
 
 
 /*--------------------*/
