@@ -16,6 +16,7 @@
     <link id="switcher" href="../css/event-default-theme.css" rel="stylesheet">
 
     <!-- Main Style -->
+    <link rel="stylesheet" href="./css/style.css">
     <link href="../css/event-style.css" rel="stylesheet">
 
     <!-- Fonts -->
@@ -27,40 +28,60 @@
   </head>
 
   <body>
-  	
-  	<!-- Start Header -->
-	<header id="mu-hero" class="" role="banner">
-		<!-- Start menu  -->
-		<nav class="navbar navbar-fixed-top navbar-inverse mu-navbar mu-nav-show">
-		  	<div class="container">
-			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://ieeedtu.com/" title="IEEE DTU" target="_blank">
+                  <img src="./img/ieee_dtu.gif" alt="IEEE DTU" class="img-responsive">
+                </a>
+                <a class="navbar-brand" href="http://dtu.ac.in/" title="Delhi Technological University" target="_blank">
+                  <img src="./img/dtu_logo.png" alt="DTU" class="img-responsive">
+                </a>
+                <a class="navbar-brand page-scroll" href="index.html"><div style="font-family: Shadows Into Light; font-size: 40px; color: skyblue">TROIKA'18</div></a>
+            </div>
 
-			      <!-- Logo -->
-			      <a class="navbar-brand" href="index.html">Troika</a>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#page-top">HOME</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#about">ABOUT</a>
+                    </li>
+                    <li class="">
+                      <a class="page-scroll" href="#event">EVENTS</a>
+                    </li>
+                    <li class="">
+                      <a class="page-scroll" href="#schedule">SCHEDULE</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#sponsors">SPONSORS</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#contact">CONTACT US</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#register">REGISTER</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-			    </div>
+    </nav>
 
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			      	<ul class="nav navbar-nav mu-menu navbar-right">
-			      		<li><a href="#mu-hero">Home</a></li>
-				        <li><a href="#mu-about">About</a></li>
-								<li><a href="#mu-details">Event Details</a></li>
-								<li><a href="#mu-schedule">Schedule</a></li>
-			            <li><a href="#mu-contact">Contact</a></li>
-			      	</ul>
-			    </div><!-- /.navbar-collapse -->
-		  	</div><!-- /.container-fluid -->
-		</nav>
-		<!-- End menu -->
-
+    <header id="mu-hero" class="" role="banner">
 		<div class="mu-hero-overlay">
 			<div class="container">
 				<div class="mu-hero-area">
@@ -89,8 +110,8 @@
 			</div>
 		</div>
 	</header>
-	<!-- End Header -->
-	
+
+
 	<!-- Start main content -->
 	<main role="main">
 		<!-- Start About -->
@@ -103,7 +124,7 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="mu-about-left">
-										<img class="" src="../img/about.jpg" alt="Sample Image">
+										<img class="" src="../img/rough.jpg" alt="Sample Image">
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -180,7 +201,8 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				<img src="" alt="icon">
+								    				<img src="contacct
+								    				" alt="icon">
 								    				<p class="mu-event-time">10.00 AM</p>
 								    				<h3>Event</h3>
 								    			</div>
@@ -329,32 +351,9 @@
 							<div class="mu-title-area">
 								<h2 class="mu-heading-title">Contact Us</h2>
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
-							</div>
 
-							<!-- Start Contact Content -->
-							<div class="mu-contact-content">
-								<div class="row">
 
-								<div class="col-md-12">
-									<div class="mu-contact-form-area">
-										<div id="form-messages"></div>
-											<form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
-												<div class="form-group">                
-													<input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
-												</div>
-												<div class="form-group">                
-													<input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
-												</div>              
-												<div class="form-group">
-													<textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
-												</div>
-												<button type="submit" class="mu-send-msg-btn"><span>SUBMIT</span></button>
-								            </form>
-										</div>
-									</div>
-								</div>
 							</div>
-							<!-- End Contact Content -->
 						</div>
 					</div>
 				</div>
@@ -375,7 +374,7 @@
 						<div class="mu-social-media">
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
 							<a href="#"><i class="fa fa-linkedin"></i></a>
 							<a href="#"><i class="fa fa-youtube"></i></a>
 						</div>
