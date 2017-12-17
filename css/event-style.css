@@ -1252,10 +1252,11 @@ button:focus {
 
 
 #mu-footer {
-	background-color: #f8f8f8;
+	background-color: #1F2833 ;
 	display: inline;
 	float: left;
 	width: 100%;
+	color:white;
 }
 
 .mu-footer-area{
@@ -1280,11 +1281,10 @@ button:focus {
 }
 
 .mu-social-media a {
-	border: 1px solid #19191a;
-	border-radius: 50px;
 	color: #19191a;
+	color:white;
 	display: inline-block;
-	font-size: 12px;
+	font-size: 18px !important;
 	margin-right: 10px;
 	text-align: center;
 	text-decoration: none;
@@ -1293,6 +1293,11 @@ button:focus {
 	height: 35px;
 	line-height: 35px;
 	font-size: 15px;
+}
+
+.mu-social-media a:hover {
+	color:#66FCF1;
+	border:none;
 }
 
 .mu-footer-bottom {
