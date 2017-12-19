@@ -2,11 +2,11 @@
 <html>
 <head>
 
-  <script type="text/javascript">
+   <script type="text/javascript">
 			console.log("%cTroika'18", "background: white; color: black; font-size: x-large");
 			console.log("  -Developed using A-frame.");
 			console.log("%c>> Developer", "background: white; color: black; font-size: small");
-			console.log("%c----> SAGNIK BHOWMICK", "background: white; color: black; font-size: small");
+			console.log("%c-->> SAGNIK BHOWMICK", "background: white; color: black; font-size: small");
   </script>
 
   <meta charset="utf-8">
@@ -45,18 +45,7 @@
 		<audio id="hover-menu-sound">
 			<source src="assets/sounds/button-hover-mp3.mp3" type="audio/mpeg">
 			<source src="horse.mp3" type="audio/mpeg">
-		</audio> --> -->
-
-    <script>
-      var t = 0;
-      function render() {
-        t += 0.01;
-        requestAnimationFrame(render);
-        satellite.setAttribute('position', (5*Math.sin(t)+8)+ ' 1.5 ' +(5*Math.cos(t)-4));
-        moon.setAttribute('position', (15*Math.cos(t)+8)+ ' 1.5 ' +(11*Math.sin(t)-4));
-            }
-      render()
-    </script>
+		</audio> -->
 
 
   <a-scene>
@@ -69,6 +58,8 @@
       <a-asset-item id="sat-mtl" src="./assets/nasa-aqua-satellite-obj/nasa-aqua-satellite.mtl"></a-asset-item>
       <a-asset-item id="mars-obj" src="./assets/mars-obj/mars.obj"></a-asset-item>
       <a-asset-item id="mars-mtl" src="./assets/mars-obj/mars.mtl"></a-asset-item>
+      <a-asset-item id="oat-obj" src="./assets/oat/finaloat.obj"></a-asset-item>
+      <a-asset-item id="oat-mtl" src="./assets/oat/finaloat.mtl"></a-asset-item>
 
     </a-assets>
     <a-sky src="./assets/space.jpg">
@@ -94,6 +85,20 @@
              to="0 360 0"
              repeat="indefinite"></a-animation>
     </a-entity>
+    <!-- <a-entity id="oatdtu" obj-model="obj: #oat-obj; mtl: #oat-mtl" position="-5 1.5 -3">
+    </a-entity> -->
   </a-scene>
+
+  <script>
+    var t = 0;
+    function render() {
+      t += 0.01;
+      requestAnimationFrame(render);
+      satellite.setAttribute('position', (5*Math.sin(t)+8)+ ' 1.5 ' +(5*Math.cos(t)-4));
+      moon.setAttribute('position', (15*Math.cos(t)+8)+ ' 1.5 ' +(11*Math.sin(t)-4));
+          }
+    render()
+  </script>
+
 </body>
 </html>
