@@ -86,10 +86,11 @@
 
 .navbar-brand{
 	color:#C5C6C7 !important;	
+	padding: 20px;
 }
 
 .navbar-brand:hover{
-	color:#66FCF1 !important;	
+	color:white !important;	
 }
 
 .navbar-toggle{
