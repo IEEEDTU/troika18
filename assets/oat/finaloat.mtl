@@ -160,7 +160,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd C:\\Users\\Aman Sahotra\\oatgrass.jpg
+map_Kd oatgrass.jpg
 
 newmtl Material.018
 Ns 96.078431
@@ -171,7 +171,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd C:\\Users\\Aman Sahotra\\oattiles1.jpg
+map_Kd oattiles1.jpg
 
 newmtl Material.020
 Ns 96.078431
@@ -222,7 +222,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd C:\\Users\\Aman Sahotra\\grass.jpg
+map_Kd grass.jpg
 
 newmtl Material.025
 Ns 96.078431
@@ -233,7 +233,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 1
-map_Kd C:\\Users\\Aman Sahotra\\grey-surface.jpg
+map_Kd grey-surface.jpg
 
 newmtl Material.026
 Ns 96.078431
