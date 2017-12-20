@@ -188,7 +188,6 @@ button:focus {
 /*--------------------*/
 
 #mu-hero {
-	background-image: url("assets/images/head-featured-bg.jpg");
 	display: inline;
 	float: left;
 	width: 100%;
@@ -332,6 +331,7 @@ button:focus {
 .mu-navbar {
 	top: -150px;
 	transition: all 0.5s;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .mu-nav-show {
@@ -339,23 +339,78 @@ button:focus {
 }
 
 #mu-hero .navbar-default .navbar-brand {
-	padding: 15px 15px;
 	font-size: 28px;
 	line-height: 20px;
 }
 
-.mu-navbar .mu-menu li a {
-	color: #C5C6C7;
-	-webkit-transition: all 0.5s;
+.mu-navbar .mu-menu li a{
+	color: #C5C6C7 ;
+	padding: 20px 25px;
+}
+
+
+.mu-navbar .mu-menu li a, .mu-navbar .mu-menu li a:before, .mu-navbar .mu-menu li a:after{
+	webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
+
 
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:focus, 
 .navbar-default .navbar-nav > .active > a:hover {
 	color: #fff;
 }
+
+.mu-navbar .mu-menu li a:hover {
+	color: white !important;
+}
+
+.mu-navbar .mu-menu li a:before{
+  position: absolute; 
+  left: 0;
+  right: 0;
+  top:10px;
+  margin: auto;
+  width: 0%;
+  content: '';
+  background: #66FCF1;
+  height: 2px;
+  color:transparent;
+}
+
+.mu-navbar .mu-menu li a:after{
+  position: absolute; 
+  bottom:8px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '';
+  background: #66FCF1;
+  height: 2px;
+  color:transparent;
+}
+.mu-navbar .mu-menu li a:hover:after,.mu-navbar .mu-menu li a:hover:before {
+  width: 70%;
+}
+
+.navbar-nav > .active >a{
+	background: #C5C6C7 !important;
+	color: #0B0C10 !important;
+	webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.navbar-nav > .active >a:hover{
+	color: #C5C6C7 !important;
+	background : #0B0C10 !important;
+	webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
 
 
 
@@ -365,7 +420,8 @@ button:focus {
 
 
 #mu-about {
-	background-color: #fff;
+	background-color: #0B0C10;
+	color: #fff;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -533,6 +589,7 @@ button:focus {
 
 #mu-schedule {
 	background-color: #f8f8f8;
+
 	display: inline;
 	float: left;
 	width: 100%;
@@ -929,7 +986,7 @@ button:focus {
 /*--------------------*/
 
 #mu-details {
-	background-image: url("assets/images/details-bg.jpg");
+	background-image: url("");
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -940,7 +997,7 @@ button:focus {
 }
 
 #mu-details::before {
-	background: rgba(0,0,0,0.9);
+	background-color: #C5C6C7;
 	bottom: 0;
 	content: '';
 	left: 0;
@@ -960,6 +1017,7 @@ button:focus {
 .mu-details-area .mu-title,
 .mu-details-area p {
 	color: #fff;
+	color:#0B0C10;
 }
 
 .mu-details-content {
@@ -1124,7 +1182,8 @@ button:focus {
 /*--------------------*/
 
 #mu-contact {
-	background-color: #f8f8f8;
+	background-color: #C5C6C7;
+    color:#0B0C10;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -1133,7 +1192,7 @@ button:focus {
 .mu-contact-area {
 	display: inline;
 	float: left;
-	padding: 100px 0 50px;
+	padding: 120px 0 100px;
 	width: 100%;
 }
 
@@ -1245,6 +1304,19 @@ button:focus {
 }
 
 
+.contacts {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .contacts {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
 
 /*--------------------*/
 /* FOOTER */
@@ -1252,16 +1324,17 @@ button:focus {
 
 
 #mu-footer {
-	background-color: #f8f8f8;
+	background-color: #0B0C10 ;
 	display: inline;
 	float: left;
 	width: 100%;
+	color:white;
 }
 
 .mu-footer-area{
 	display: inline;
 	float: left;
-	padding: 30px 0;
+	padding: 35px 0;
 	text-align: center;
 	width: 100%;
 }
@@ -1280,11 +1353,10 @@ button:focus {
 }
 
 .mu-social-media a {
-	border: 1px solid #19191a;
-	border-radius: 50px;
 	color: #19191a;
+	color:white;
 	display: inline-block;
-	font-size: 12px;
+	font-size: 18px !important;
 	margin-right: 10px;
 	text-align: center;
 	text-decoration: none;
@@ -1293,6 +1365,11 @@ button:focus {
 	height: 35px;
 	line-height: 35px;
 	font-size: 15px;
+}
+
+.mu-social-media a:hover {
+	color:#66FCF1;
+	border:none;
 }
 
 .mu-footer-bottom {
@@ -1735,4 +1812,3 @@ button:focus {
 	
 	
 }
-

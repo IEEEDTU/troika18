@@ -7,7 +7,7 @@
 }
 
 .navbar{
-	background-color: #1f2833;
+	background-color: #0B0C10;
 }
 
 .mu-primary-btn:hover,
@@ -86,12 +86,14 @@
 
 .navbar-brand{
 	color:#C5C6C7 !important;	
+	padding: 20px;
 }
 
 .navbar-brand:hover{
-	color:#66FCF1 !important;	
+	color:white !important;	
 }
 
 .navbar-toggle{
-	background-color: #1f2833 !important;
+	background-color: #0B0C10 !important;
 }
+

@@ -1,7 +1,16 @@
 body{
     overflow-x: hidden;
 }
-
+img{
+    margin: 10px;
+    height: 40px;
+}
+nav{
+    border-bottom: solid white 1px;
+}
+button{
+    background-color: beige;
+}
 li>a{
     font-size: 25px;
     border-radius: 10px;
@@ -30,7 +39,20 @@ li>a{
 #abc{
     background-image: url("../img/background.jpg");
     background-size: cover;
+    padding : 10px;
     /*background-attachment: fixed;*/
+}
+p{
+    text-align: center;
+    color: aqua;
+    font-size: 50px;
+    font-family: Times New Roman, Times, serif;
+}
+#txt1{
+    font-weight: 600;
+}
+#txt2{
+    font-weight: bold;
 }
 #troika{
     display:block;
@@ -38,6 +60,7 @@ li>a{
     height: 300px;
     filter:brightness(100%);
 }
+
 #footer{
     padding-top: 20px;
     text-align: center;
@@ -46,6 +69,9 @@ li>a{
     color: black;
     font-size: 20px;
     padding-bottom: 20px;
+}
+.Footer{
+   color: black ;
 }
 th,td{
     text-align: center;

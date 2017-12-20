@@ -72,8 +72,9 @@
 
     function initMap() {
         // Styles a map in night mode.
+	var uluru = {lat: 28.7501, lng: 77.1177}
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 28.7501, lng: 77.1177},
+          center: uluru,
           zoom: 17,
           styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
@@ -156,4 +157,8 @@
             }
           ]
         });
+	var marker = new google.maps.Marker({
+           position: uluru,
+           map: map
+         });
       }
