@@ -72,7 +72,7 @@ a.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: skyblue;
+    color: #000;
 }
 
 .navbar-default .nav li a:hover,
@@ -207,7 +207,7 @@ a.active {
     .beta-home-button {
         font-size: 17px;
         padding: 3px 21px;
-        margin-left: 40px;
+        /* margin-left: 40px; */
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -280,7 +280,7 @@ div {
 	background-size:cover;
     z-index:1;
     background-position: center center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 	-webkit-filter: blur(10px);
     -moz-filter: blur(10px);
     -o-filter: blur(10px);
