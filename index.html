@@ -13,8 +13,8 @@
   <title>Troika'18</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
   <script src="./script/aframe.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/style.css"> -->
 
 </head>
 
@@ -58,8 +58,8 @@
       <a-asset-item id="sat-mtl" src="./assets/nasa-aqua-satellite-obj/nasa-aqua-satellite.mtl"></a-asset-item>
       <a-asset-item id="mars-obj" src="./assets/mars-obj/mars.obj"></a-asset-item>
       <a-asset-item id="mars-mtl" src="./assets/mars-obj/mars.mtl"></a-asset-item>
-      <a-asset-item id="oat-obj" src="./assets/oat/finaloat.obj"></a-asset-item>
-      <a-asset-item id="oat-mtl" src="./assets/oat/finaloat.mtl"></a-asset-item>
+      <a-asset-item id="oat-obj" src="./assets/dtu-oat/finaloat1.obj"></a-asset-item>
+      <a-asset-item id="oat-mtl" src="./assets/dtu-oat/finaloat1.mtl"></a-asset-item>
 
     </a-assets>
     <a-sky src="./assets/space.jpg">
@@ -85,8 +85,8 @@
              to="0 360 0"
              repeat="indefinite"></a-animation>
     </a-entity>
-    <!-- <a-entity id="oatdtu" obj-model="obj: #oat-obj; mtl: #oat-mtl" position="-5 1.5 -3">
-    </a-entity> -->
+    <a-entity id="oatdtu" obj-model="obj: #oat-obj; mtl: #oat-mtl" position="-3 2 -2" scale="0.01 0.01 0.01">
+    </a-entity>
   </a-scene>
 
   <script>
