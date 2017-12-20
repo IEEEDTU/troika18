@@ -36,7 +36,7 @@ a.active {
     height: 100%;
     width: auto;
     margin: 0 auto;
-    object-fit: contain; 
+    object-fit: contain;
 }
 
 .navbar-default {
@@ -94,11 +94,11 @@ a.active {
 }
 
 @media only screen and (max-width: 768px) {
-    
+
     .navbar-default {
         /*padding: 12px 0;*/
         border: 0;
-        background-color: rgba(102, 252, 241, 0.5);
+        background-color: rgba(102, 252, 241, 0.9);
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -117,7 +117,7 @@ a.active {
 
     .navbar-default .navbar-shrink {
         padding: 5px 0;
-        background-color: rgba(102, 252, 241, 0.5);
+        background-color: rgba(102, 252, 241, 0.9);
     }
 
     .navbar-default .navbar-shrink .navbar-brand {
@@ -136,7 +136,7 @@ a.active {
 
 .navbar.scrolled {
     background: rgb(102, 252, 241); /* IE */
-    background: rgba(102, 252, 241, 0.5); /* NON-IE */
+    background: rgba(102, 252, 241, 0.9); /* NON-IE */
 }
 
 .first {
@@ -159,7 +159,7 @@ a.active {
     -moz-filter: blur(10px);
     -o-filter: blur(10px);
     -ms-filter: blur(10px);
-    filter: blur(1px);	
+    filter: blur(1px);
 }
 
 .main{
@@ -217,11 +217,11 @@ a.active {
         margin-top : 2px;
     }
     .first-line {
-        
+
         font-size: 6vw;
     }
     .second-line {
-        
+
         font-size: 6vw;
         color: #800000;
     }
@@ -241,11 +241,11 @@ div {
 .first-line {
     font-size: 6vw;
     font-weight: 300;
-    
+
 }
 
 .second-line {
-    
+
     font-size: 6vw;
     font-weight: 300;
     color: #45a29e;
@@ -253,8 +253,8 @@ div {
 
 .about-troika {
     font-size: 6.4vw;
-    text-align: center; 
-    font-weight: 300;  
+    text-align: center;
+    font-weight: 300;
     font-family: Shadows Into Light ;
     margin-top: -10px;
     color: #45a29e;
@@ -285,7 +285,7 @@ div {
     -moz-filter: blur(10px);
     -o-filter: blur(10px);
     -ms-filter: blur(10px);
-    filter: blur(1px);	
+    filter: blur(1px);
 }
 
 .about-us{
@@ -312,7 +312,7 @@ div {
     .about-troika{
         font-size: 34px;
     }
-    
+
 }
 
 /* Three columns side by side */
@@ -385,7 +385,7 @@ div {
     -moz-filter: blur(10px);
     -o-filter: blur(10px);
     -ms-filter: blur(10px);
-    filter: blur(1px);	
+    filter: blur(1px);
 }
 
 .content {
@@ -395,12 +395,12 @@ div {
 
 .contact-head {
     font-size: 6.4vw;
-    text-align: center; 
-    font-weight: 300;  
+    text-align: center;
+    font-weight: 300;
     font-family: Shadows Into Light ;
 }
 
-.foot { 
+.foot {
     background-color: #C5C6C7;
     color: #ffffff;
     padding: 41px 80px;
@@ -499,7 +499,7 @@ div {
  }
 
 .contact-us {
-    font-weight: 300; 
+    font-weight: 300;
     font-size: 3vw;
     color: #66FCF1;
  }
@@ -537,12 +537,3 @@ div {
         font-size: 34px;
     }
  }
-
-
- 
-
-
-
-
-
-
