@@ -433,7 +433,7 @@ button:focus {
 	padding: 100px 0;
 	width: 100%;
 }
-
+	
 .mu-title-area {
 	display: inline;
 	float: left;
@@ -588,7 +588,7 @@ button:focus {
 /*--------------------*/
 
 #mu-schedule {
-	background-color: #f8f8f8;
+	background-color: #c5c6c7;
 
 	display: inline;
 	float: left;
@@ -621,6 +621,7 @@ button:focus {
 }
 
 .mu-schedule-menu li a {
+	color: #000
 	border-radius: 0;
 	margin: 0 10px;
 	-webkit-transition: all 0.5s;
@@ -633,7 +634,7 @@ button:focus {
 .mu-schedule-menu li.active a,
 .mu-schedule-menu li.active a:hover,
 .mu-schedule-menu li.active a:focus {
-	color: #fff;
+	color: #000;
 }
 
 .mu-schedule-content{
@@ -986,7 +987,7 @@ button:focus {
 /*--------------------*/
 
 #mu-details {
-	background-image: url("");
+	background-color: #000000;
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -997,7 +998,7 @@ button:focus {
 }
 
 #mu-details::before {
-	background-color: #C5C6C7;
+	background-color: #1f2833;
 	bottom: 0;
 	content: '';
 	left: 0;
@@ -1017,7 +1018,7 @@ button:focus {
 .mu-details-area .mu-title,
 .mu-details-area p {
 	color: #fff;
-	color:#0B0C10;
+	/* color:#0B0C10; */
 }
 
 .mu-details-content {
@@ -1182,8 +1183,8 @@ button:focus {
 /*--------------------*/
 
 #mu-contact {
-	background-color: #C5C6C7;
-    color:#0B0C10;
+	background-color: #1F2833;
+    color:#fff;
 	display: inline;
 	float: left;
 	width: 100%;
