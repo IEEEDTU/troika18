@@ -11,8 +11,13 @@
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <!-- CSS Files -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<!-- Theme color -->
+    <link id="switcher" href="../css/event-default-theme.css" rel="stylesheet">
 	<link href="css/events.css" rel="stylesheet" />
+		<!-- Main Style -->
+		<link rel="stylesheet" href="./css/style.css">
+		<link href="../css/event-style.css" rel="stylesheet">
 	<style>
         body{
             background-image: url("img/background-eventspage.jpg");
@@ -22,7 +27,42 @@
 
 
   <body data-spy="scroll" data-target=".navbar" data-offset="0">
+	<!-- Start Header -->
+	<header id="mu-hero" class="" role="banner">
+		<!-- Start menu  -->
+		<nav class="navbar navbar-fixed-top navbar-inverse mu-navbar mu-nav-show">
+		  	<div class="container">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
 
+			    <!-- Logo -->
+		      	<a href="http://ieeedtu.com" target="_blank"><img src="./img/ieee_dtu.gif" height="30px" style="margin:15px;"></a>
+				<a href="http://dtu.ac.in" target="_blank"><img src="./img/dtu_logo.png" height="30px" style="margin:15px;"></a>
+				<a href="./index.html" target="_blank"><img src="./img/TroikaFinal.png" height="30px" style="margin:15px;"></a>
+
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      	<ul class="nav navbar-nav mu-menu navbar-right">
+			      		<li class="active"><a href="./index.html" class="cool-link">Home</a></li>
+				        <li><a href="./index.html#about" class="cool-link">About Us</a></li>
+			            <li><a href="./schedule.html" class="cool-link">Schedule</a></li>
+			            <li><a href="./index.html#contact" class="cool-link">Contact</a></li>
+			            <li><a href="#mu-register" class="cool-link">Register</a></li>
+			      	</ul>
+			    </div><!-- /.navbar-collapse -->
+		  	</div><!-- /.container-fluid -->
+		</nav>
+		<!-- End menu -->
+	</header>
+	<!-- End Header -->
 
     <h1 class="text-center">Explore The Events</h1>
     <hr>
@@ -274,7 +314,11 @@
     <script src="javaScript/jquery.min.js"></script>
     <script type=text/javascript src=javaScript/events.js></script>
           <script type=text/javascript src=javaScript/isotope.pkgd.min.js></script>
-    <script src='../npmcdn.com/isotope-layout%403.0.4/dist/isotope.pkgd.js'></script>
+	<script src='../npmcdn.com/isotope-layout%403.0.4/dist/isotope.pkgd.js'></script>
+	<!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Custom js -->
+	<script type="text/javascript" src="../javaScript/event-script.js"></script>
 
 
   </body>
