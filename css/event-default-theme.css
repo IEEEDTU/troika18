@@ -1,13 +1,13 @@
 .mu-hero-overlay,
 .mu-video-overlay {
-	background-color: #66FCF1;/* fallback for old browsers */
+	background-color: #45A29E;/* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #64b3f4, #66FCF1);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #64b3f4, #66FCF1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 .navbar{
-	background-color: #1f2833;
+	background-color: #0B0C10;
 }
 
 .mu-primary-btn:hover,
@@ -94,5 +94,6 @@
 }
 
 .navbar-toggle{
-	background-color: #1f2833 !important;
+	background-color: #0B0C10 !important;
 }
+
