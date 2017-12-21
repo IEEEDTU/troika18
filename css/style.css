@@ -154,7 +154,6 @@ a.active {
 	background-size:contain;
     z-index:1;
     background-position: center;
-    /* background-attachment: fixed; */
 	-webkit-filter: blur(10px);
     -moz-filter: blur(10px);
     -o-filter: blur(10px);
@@ -193,6 +192,9 @@ a.active {
     font-size: 25px;
     box-shadow: 3px 3px 16px 2px transparent;
     background-color: #66fcf1;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .4s;
 }
 
 .buttons {
@@ -208,15 +210,11 @@ a.active {
     .beta-home-button {
         font-size: 17px;
         padding: 3px 21px;
-        /* margin-left: 40px; */
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
     }
-    .buttons {
+    /*.buttons {
         margin-left: 10px;
         margin-top : 2px;
-    }
+    }*/
     .first-line {
 
         font-size: 6vw;
@@ -229,9 +227,9 @@ a.active {
     .main {
         padding-left: 30px;
     }
-    .buttons {
+    /*.buttons {
         padding-left: 10px;
-    }
+    }*/
 }
 
 
@@ -293,7 +291,7 @@ div {
 .about-us{
     font-size: 2.5vw;
     font-weight: 600;
-    text-align: left;
+    text-align: center;
     color:#66FCF1 ;
 }
 
@@ -308,7 +306,7 @@ div {
         font-size : 15px;
     }
     .about-us{
-        font-size:16px ;
+        font-size:24px ;
         font-weight: 1000;
     }
     .about-troika{
@@ -333,6 +331,16 @@ div {
     }
     .about {
         padding: 90px 50px;
+    }
+}
+
+@media (max-width: 850px) {
+    .container1 h2 {
+        font-size: 20px;
+    }
+
+    .container1 p {
+        font-size: 10px;
     }
 }
 

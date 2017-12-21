@@ -72,6 +72,7 @@ h6 {
 
 img {
 	border: none;
+	border-radius: 25px;
 	max-width: 100%;
 }
 
@@ -420,7 +421,7 @@ button:focus {
 
 
 #mu-about {
-	background-color: #0B0C10;
+	background-color: #1F2833;
 	color: #fff;
 	display: inline;
 	float: left;
@@ -440,6 +441,22 @@ button:focus {
 	text-align: center;
 	padding: 0 120px;
 	width: 100%;
+}
+
+.mu-title-area a.btn {
+	text-align: center;
+	margin: 5px;
+	background-color: white;
+    color: black;
+	border: 2px solid #000;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+
+.mu-title-area a.btn:hover {
+	background-color: #66fcf1; /* Green */
+    color: white;
 }
 
 .mu-title {
