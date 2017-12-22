@@ -139,6 +139,15 @@ button:focus {
 	outline: none;
 	border: none;
 }
+.quote{
+    font-size: 25px;
+}
+.anon{
+    font-family: cursive;
+    margin-left: 8cm;
+    font-size: 20px;
+}
+   
 
 
 /* ========= BUTTON =========*/
