@@ -647,7 +647,7 @@ button:focus {
 }
 
 .mu-schedule-menu li a {
-	color: #000
+	color: #fff;
 	border-radius: 0;
 	margin: 0 10px;
 	-webkit-transition: all 0.5s;
