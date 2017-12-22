@@ -58,12 +58,12 @@
       <a-asset-item id="sat-mtl" src="./assets/nasa-aqua-satellite-obj/nasa-aqua-satellite.mtl"></a-asset-item>
       <a-asset-item id="mars-obj" src="./assets/mars-obj/mars.obj"></a-asset-item>
       <a-asset-item id="mars-mtl" src="./assets/mars-obj/mars.mtl"></a-asset-item>
-      <a-asset-item id="oat-obj" src="./assets/dtu-oat/buildings.obj"></a-asset-item>
-      <a-asset-item id="oat-mtl" src="./assets/dtu-oat/buildings.mtl"></a-asset-item>
+      <a-asset-item id="oat-obj" src="./assets/dtu-oat/centralstage.obj"></a-asset-item>
+      <a-asset-item id="oat-mtl" src="./assets/dtu-oat/centralstage.mtl"></a-asset-item>
 
     </a-assets>
-    <a-sky src="./assets/space.jpg">
-    </a-sky>
+    <!-- <a-sky src="./assets/space.jpg">
+    </a-sky> -->
     <a-entity light="type: ambient; color: #FFFFFF"></a-entity>
     <a-entity obj-model="obj: #earth-obj; mtl: #earth-mtl" position="8 1.5 -4" scale="1.5 1.5 1.5">
       <a-animation attribute="rotation"
@@ -85,7 +85,7 @@
              to="0 360 0"
              repeat="indefinite"></a-animation>
     </a-entity>
-    <a-entity id="oatdtu" obj-model="obj: #oat-obj; mtl: #oat-mtl" position="-3 2 -2" scale="0.1 0.1 0.1">
+    <a-entity id="oatdtu" obj-model="obj: #oat-obj; mtl: #oat-mtl" position="-3 2 -2" scale="1 1 1">
     </a-entity>
   </a-scene>
 
