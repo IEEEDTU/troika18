@@ -271,7 +271,7 @@ button:focus {
 }
 
 .mu-hero-featured-content h1 {
-	font-size: 45px;
+	font-size: 85px;
 	color: #fff;
 	font-weight: 300;
 	margin-bottom: 15px;
@@ -280,7 +280,7 @@ button:focus {
 
 .mu-hero-featured-content h2 {
 	color: #fff;
-	font-size: 25px;
+	font-size: 45px;
 	font-weight: 300;
 }
 
@@ -1466,11 +1466,11 @@ button:focus {
 	}
 
 	.mu-hero-featured-content h1 {
-		font-size: 35px;
+		font-size: 85px;
 	}
 
 	.mu-hero-featured-content h2 {
-		font-size: 18px;
+		font-size: 45px;
 	}
 
 	.mu-event-date-line {
@@ -1657,11 +1657,11 @@ button:focus {
 	}
 
 	.mu-hero-featured-content h1 {
-		font-size: 25px;
+		font-size: 40px;
 	}
 
 	.mu-hero-featured-content h2 {
-		font-size: 14px;
+		font-size: 20px;
 	}
 
 	.mu-event-date-line {
