@@ -1,9 +1,15 @@
 .mu-hero-overlay,
 .mu-video-overlay {
-	background-color: #45A29E;/* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #64b3f4, #66FCF1);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #64b3f4, #66FCF1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	/* background-color: #45A29E;fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #64b3f4, #66FCF1);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #64b3f4, #66FCF1); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: url('../img/oat.jpg');
+	background-size: cover;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	max-width:100%;
+	max-height:100%;
+	object-fit: contain'
 }
 
 .navbar{

@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    font-family: Quicksand;
+    font-family: "Lato",sans-serif;
     background-color: rgb(14, 13, 13);
 }
 
@@ -154,7 +154,6 @@ a.active {
 	background-size:contain;
     z-index:1;
     background-position: center;
-    /* background-attachment: fixed; */
 	-webkit-filter: blur(10px);
     -moz-filter: blur(10px);
     -o-filter: blur(10px);
@@ -163,9 +162,10 @@ a.active {
 }
 
 .main{
-    padding-top: 60px;
+    padding-top: 300px;
     padding-left:  100px;
     color : #66fcf1 ;
+    margin-left: 9%;
 }
 
 .main-heading{
@@ -192,6 +192,9 @@ a.active {
     font-size: 25px;
     box-shadow: 3px 3px 16px 2px transparent;
     background-color: #66fcf1;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .4s;
 }
 
 .buttons {
@@ -207,15 +210,11 @@ a.active {
     .beta-home-button {
         font-size: 17px;
         padding: 3px 21px;
-        /* margin-left: 40px; */
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
     }
-    .buttons {
+    /*.buttons {
         margin-left: 10px;
         margin-top : 2px;
-    }
+    }*/
     .first-line {
 
         font-size: 6vw;
@@ -228,9 +227,9 @@ a.active {
     .main {
         padding-left: 30px;
     }
-    .buttons {
+    /*.buttons {
         padding-left: 10px;
-    }
+    }*/
 }
 
 
@@ -239,15 +238,15 @@ div {
 }
 
 .first-line {
-    font-size: 6vw;
-    font-weight: 300;
+    font-size: 4vw;
+    font-weight: 600;
 
 }
 
 .second-line {
 
-    font-size: 6vw;
-    font-weight: 300;
+    font-size: 3vw;
+    font-weight: 450;
     color: #45a29e;
 }
 
@@ -267,6 +266,7 @@ div {
     border-top: 6px solid #45A29E;
     border-bottom: 6px solid #45A29E;
     border-radius: 20px;
+    min-block-size: 25vw;
 }
 
 .background-image-about {
@@ -289,15 +289,15 @@ div {
 }
 
 .about-us{
-    font-size: 3.2vw;
-    font-weight: 400;
+    font-size: 2.5vw;
+    font-weight: 600;
     text-align: center;
     color:#66FCF1 ;
 }
 
 .about-us-text{
     text-align: justify;
-    font-size: 24px;
+    font-size: 1.5vw;
     color: skyblue;
 }
 
@@ -306,7 +306,7 @@ div {
         font-size : 15px;
     }
     .about-us{
-        font-size:16px ;
+        font-size:24px ;
         font-weight: 1000;
     }
     .about-troika{
@@ -331,6 +331,16 @@ div {
     }
     .about {
         padding: 90px 50px;
+    }
+}
+
+@media (max-width: 850px) {
+    .container1 h2 {
+        font-size: 20px;
+    }
+
+    .container1 p {
+        font-size: 10px;
     }
 }
 
@@ -395,9 +405,9 @@ div {
 
 .contact-head {
     font-size: 6.4vw;
-    text-align: center;
-    font-weight: 300;
-    font-family: Shadows Into Light ;
+    text-align: left;
+    font-weight: 600;
+    font-family: "Lato",sans-serif ;
 }
 
 .foot {
@@ -503,13 +513,13 @@ div {
  }
 
 .contact-us {
-    font-weight: 300;
-    font-size: 3vw;
+    font-weight: 400;
+    font-size: 1.9vw;
     color: #66FCF1;
  }
 
 .contact-us-sub {
-    font-size: 2.1vw;
+    font-size: 1.5vw;
     color: skyblue;
  }
 
