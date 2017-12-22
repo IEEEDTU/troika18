@@ -139,6 +139,15 @@ button:focus {
 	outline: none;
 	border: none;
 }
+.quote{
+    font-size: 25px;
+}
+.anon{
+    font-family: cursive;
+    margin-left: 8cm;
+    font-size: 20px;
+}
+   
 
 
 /* ========= BUTTON =========*/
@@ -638,7 +647,7 @@ button:focus {
 }
 
 .mu-schedule-menu li a {
-	color: #000
+	color: #fff;
 	border-radius: 0;
 	margin: 0 10px;
 	-webkit-transition: all 0.5s;
