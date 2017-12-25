@@ -7,6 +7,7 @@
 			console.log("  -Developed using A-frame.");
 			console.log("%c>> Developer", "background: white; color: black; font-size: small");
 			console.log("%c-->> SAGNIK BHOWMICK", "background: white; color: black; font-size: small");
+      console.log("%c-->> NIKHIL KUMAR MISHRA", "background: white; color: black; font-size: small");
   </script>
 
   <meta charset="utf-8">
@@ -47,7 +48,6 @@
 			<source src="horse.mp3" type="audio/mpeg">
 		</audio> -->
 
-
   <a-scene>
     <a-assets>
       <a-asset-item id="earth-obj" src="./assets/earth-obj/earth.obj"></a-asset-item>
@@ -62,8 +62,8 @@
       <a-asset-item id="oat-mtl" src="./assets/dtu-oat/final1111.mtl"></a-asset-item>
       <a-asset-item id="cld-obj" src="./assets/island-cloud-mod-obj/island-cloud-mod.obj"></a-asset-item>
       <a-asset-item id="cld-mtl" src="./assets/island-cloud-mod-obj/island-cloud-mod.mtl"></a-asset-item>
-      <a-asset-item id="rov-obj" src="./assets/rover/mars-rover-spirit-opportunitymtl.obj"></a-asset-item>
-      <a-asset-item id="rov-mtl" src="./assets/rover/mars-rover-spirit-opportunitymtl.mtl"></a-asset-item>
+      <!-- <a-asset-item id="rov-obj" src="./assets/rover/mars-rover-spirit-opportunitymtl.obj"></a-asset-item>
+      <a-asset-item id="rov-mtl" src="./assets/rover/mars-rover-spirit-opportunitymtl.mtl"></a-asset-item> -->
       <a-asset-item id="globe-obj" src="./assets/globe-sphere-obj/globe-sphere.obj"></a-asset-item>
       <a-asset-item id="globe-mtl" src="./assets/globe-sphere-obj/globe-sphere.mtl"></a-asset-item>
       <a-asset-item id="sun-obj" src="./assets/sun-obj/sun.obj"></a-asset-item>
@@ -101,13 +101,14 @@
     </a-entity>
     <a-entity id="cld" obj-model="obj: #cld-obj; mtl: #cld-mtl" position="-0.3 3.5 -3.25" scale="0.005 0.005 0.005">
     </a-entity>
-    <a-entity id="rov" obj-model="obj: #rov-obj; mtl: #rov-mtl" position="0.5 1.15 -1.3" scale="0.002 0.002 0.002">
-    </a-entity>
+    <!-- <a-entity id="rov" obj-model="obj: #rov-obj; mtl: #rov-mtl" position="0.5 1.15 -1.3" scale="0.002 0.002 0.002">
+    </a-entity> -->
     <a-entity id="globe" obj-model="obj: #globe-obj; mtl: #globe-mtl" position="1 1.35 -2" scale="4.05 4.05 4.05">
     </a-entity>
     <a-entity id="sun" obj-model="obj: #sun-obj; mtl: #sun-mtl" position="150 1.35 -3" scale="0.15 0.15 0.15">
     </a-entity>
   </a-scene>
+
 
   <script>
     var t = 0;
