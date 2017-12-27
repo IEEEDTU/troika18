@@ -19,7 +19,7 @@
   <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
   <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
   <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
-
+  <script src="components/nav-bar.js"></script>
 
 </head>
 
@@ -44,7 +44,7 @@
       <a-asset-item id="sun-obj" src="./assets/sun-obj/sun.obj"></a-asset-item>
       <a-asset-item id="sun-mtl" src="./assets/sun-obj/sun.mtl"></a-asset-item>
       <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-      <img id="city-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
+      <img id="city-thumb" crossorigin="anonymous" src="./assets/about.png">
       <img id="cubes-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
       <img id="sechelt-thumb" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
 
@@ -102,26 +102,38 @@
     <a-entity id="sun" obj-model="obj: #sun-obj; mtl: #sun-mtl" position="150 1.35 -3" scale="0.15 0.15 0.15">
     </a-entity>
     <a-entity id="links">
-        <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"
+        <a-entity template="src: #link"
+                  data-src="#cubes"
+                  data-thumb="#cubes-thumb"
                   position="-2 2.5 -2"
                   scale="0.65 0.65 1"
                   rotation="0 30 0"></a-entity>
-        <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"
+        <a-entity template="src: #link"
+                  data-src="#city"
+                  data-thumb="#city-thumb"
                   position="-1.5 2.25 -2.5"
                   scale="0.6 0.6 1"
                   rotation="0 30 0"></a-entity>
-        <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"
+        <a-entity template="src: #link"
+                  data-src="#sechelt"
+                  data-thumb="#sechelt-thumb"
                   position="-0.95 2 -3"
                   scale="0.75 0.75 1"></a-entity>
-        <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"
+        <a-entity template="src: #link"
+                  data-src="#cubes"
+                  data-thumb="#cubes-thumb"
                   position="3 2 -2.8"
                   scale="0.75 0.75 0.75"
                   rotation="0 -20 0"></a-entity>
-        <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"
+        <a-entity template="src: #link"
+                  data-src="#city"
+                  data-thumb="#city-thumb"
                   position="3.6 2.5 -2.4"
                   scale="0.65 0.65 0.65"
                   rotation="0 -35 0"></a-entity>
-        <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"
+        <a-entity template="src: #link"
+                  data-src="#sechelt"
+                  data-thumb="#sechelt-thumb"
                   position="4.4 3 -2"
                   scale="0.75 0.75 0.75"
                   rotation="0 -50 0"></a-entity>
@@ -133,7 +145,7 @@
           animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
           animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
           event-set__1="_event: mouseenter; color: springgreen"
-          event-set__2="_event: mouseleave; color: black"
+          event-set__2="_event: mouseleave; color: red"
           fuse="true"
           raycaster="objects: .link"></a-cursor>
     </a-entity>
