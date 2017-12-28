@@ -72,7 +72,7 @@ a.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #000;
+    color: #fff;
 }
 
 .navbar-default .nav li a:hover,
@@ -238,14 +238,14 @@ div {
 }
 
 .first-line {
-    font-size: 4vw;
+    font-size: 50px;
     font-weight: 600;
 
 }
 
 .second-line {
 
-    font-size: 3vw;
+    font-size: 40px;
     font-weight: 450;
     color: #45a29e;
 }
