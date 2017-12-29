@@ -15,6 +15,101 @@ h1{
 
 button:focus {outline:0;}
 
+/*--------------------*/
+/* MENU */
+/*--------------------*/
+
+#mu-hero .navbar-default {
+	background-color: #fff;
+	border-color: #e7e7e7;
+	padding: 5px 0;
+}
+
+.mu-navbar {
+	top: -150px;
+	transition: all 0.5s;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mu-nav-show {
+	top: 0px;
+}
+
+#mu-hero .navbar-default .navbar-brand {
+	font-size: 28px;
+	line-height: 20px;
+}
+
+.mu-navbar .mu-menu li a{
+	color: #C5C6C7 ;
+	padding: 20px 15px;
+}
+
+
+.mu-navbar .mu-menu li a, .mu-navbar .mu-menu li a:before, .mu-navbar .mu-menu li a:after{
+	webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover {
+	color: #fff;
+}
+
+.mu-navbar .mu-menu li a:hover {
+	color: white !important;
+}
+
+.mu-navbar .mu-menu li a:before{
+  position: absolute; 
+  left: 0;
+  right: 0;
+  top:10px;
+  margin: auto;
+  width: 0%;
+  content: '';
+  background: #66FCF1;
+  height: 2px;
+  color:transparent;
+}
+
+.mu-navbar .mu-menu li a:after{
+  position: absolute; 
+  bottom:8px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '';
+  background: #66FCF1;
+  height: 2px;
+  color:transparent;
+}
+.mu-navbar .mu-menu li a:hover:after,.mu-navbar .mu-menu li a:hover:before {
+  width: 70%;
+}
+
+.navbar-nav > .active >a{
+	background: #C5C6C7 !important;
+	color: #0B0C10 !important;
+	webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.navbar-nav > .active >a:hover{
+	color: #C5C6C7 !important;
+	background : #0B0C10 !important;
+	webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+
+
 
 .footerimg {
 	width: 3%;
