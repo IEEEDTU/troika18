@@ -13,19 +13,34 @@
   <meta charset="utf-8">
   <title>Troika'18</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- <link rel="stylesheet" href="./css/style.css">   -->
+  <style>
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+    background: url(./img/Preloader_3.gif) center no-repeat #fff;
+}
+
+</style>
   <script src="./script/aframe.min.js"></script>
   <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
   <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
   <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
   <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
   <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
-  <!-- <script src="https://rawgit.com/gasolin/aframe-href-component/master/dist/aframe-href-component.min.js"></script> -->
-  <script src="components/nav-bar.js"></script>
+  <!-- <script src="script/nav-bar.js"></script> -->
 
 </head>
 
 <body>
-
+  <!--Preloader-->
+  <div class="se-pre-con container-fluid"><a href="./indexMob.html"><p>Load Basic Version</p></a></div>
   <a-scene>
     <a-assets>
       <a-asset-item id="earth-obj" src="./assets/earth-obj/earth.obj"></a-asset-item>
@@ -169,10 +184,16 @@
     </a-entity>
 
   </a-scene>
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- <script src="./javaScript/script.js"></script>   -->
   <script>
-    document.querySelector('a-link').navigate('destination.html');
+  $(window).on('load', function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+    });
+  </script>
+  <script>
     var t = 0;
     function render() {
       t += 0.01;
