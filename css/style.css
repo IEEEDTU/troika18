@@ -154,11 +154,6 @@ a.active {
 	background-size:contain;
     z-index:1;
     background-position: center;
-	-webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(1px);
 }
 
 .main{
@@ -275,17 +270,6 @@ div {
 	right:0;
 	top:0;
 	bottom:0;
-	background:url(../img/ScrollBG.jpg);
-    background-repeat: no-repeat;
-	background-size:cover;
-    z-index:1;
-    background-position: center center;
-    /* background-attachment: fixed; */
-	-webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
-    filter: blur(1px);
 }
 
 .about-us{
