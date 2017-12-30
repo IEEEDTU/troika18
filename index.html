@@ -2,6 +2,16 @@
 <html>
 <head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89509670-2"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-89509670-2');
+</script>
+
    <script type="text/javascript">
 			console.log("%cTroika'18", "background: white; color: black; font-size: x-large");
 			console.log("  -Developed using A-frame.");
@@ -122,13 +132,6 @@
     <a-entity id="sun" obj-model="obj: #sun-obj; mtl: #sun-mtl" position="150 1.35 -3" scale="0.15 0.15 0.15">
     </a-entity>
     <a-entity id="links">
-        <a-link href="team.html" title="My Homepage">
-        <a-entity template="src: #link"
-                  data-src="#cubes"
-                  data-thumb="#team-thumb"
-                  position="-5 2.5 -2"
-                  scale="1 1 1"
-                  rotation="0 60 0"></a-entity></a-link>
         <a-link href="about.html" title="My Homepage">
             <a-entity template="src: #link"
                       data-src="#cubes"
@@ -170,6 +173,13 @@
                   position="4.4 3 -2"
                   scale="0.75 0.75 0.75"
                   rotation="0 -50 0"></a-entity></a-link>
+        <a-link href="team.html" title="My Homepage">
+        <a-entity template="src: #link"
+                  data-src="#cubes"
+                  data-thumb="#team-thumb"
+                  position="5.2 3.4 -1.4"
+                  scale="0.75 0.75 0.75"
+                  rotation="0 -65 0"></a-entity></a-link>
     </a-entity>
 
 
