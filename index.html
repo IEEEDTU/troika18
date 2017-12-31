@@ -65,18 +65,16 @@ gtag('config', 'UA-89509670-2');
       <a-asset-item id="oat-mtl" src="./assets/dtu-oat/final1111.mtl"></a-asset-item>
       <a-asset-item id="cld-obj" src="./assets/island-cloud-mod-obj/island-cloud-mod.obj"></a-asset-item>
       <a-asset-item id="cld-mtl" src="./assets/island-cloud-mod-obj/island-cloud-mod.mtl"></a-asset-item>
-      <!-- <a-asset-item id="rov-obj" src="./assets/rover/mars-rover-spirit-opportunitymtl.obj"></a-asset-item>
-      <a-asset-item id="rov-mtl" src="./assets/rover/mars-rover-spirit-opportunitymtl.mtl"></a-asset-item> -->
       <a-asset-item id="sun-obj" src="./assets/sun-obj/sun.obj"></a-asset-item>
       <a-asset-item id="sun-mtl" src="./assets/sun-obj/sun.mtl"></a-asset-item>
       <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-      <img id="about-thumb" crossorigin="anonymous" src="./assets/about.png">
-      <img id="event-thumb" crossorigin="anonymous" src="./assets/events.png">
-      <img id="sponsors-thumb" crossorigin="anonymous" src="./assets/sponsors.png">
-      <img id="register-thumb" crossorigin="anonymous" src="./assets/register.png">
-      <img id="contact-thumb" crossorigin="anonymous" src="./assets/contact.png">
-      <img id="team-thumb" crossorigin="anonymous" src="./assets/team.png">
-      <img id="schedule-thumb" crossorigin="anonymous" src="./assets/schedule.png">
+      <img id="about-thumb" crossorigin="anonymous" src="./assets/about.jpg">
+      <img id="event-thumb" crossorigin="anonymous" src="./assets/events.jpg">
+      <img id="sponsors-thumb" crossorigin="anonymous" src="./assets/sponsors.jpg">
+      <img id="register-thumb" crossorigin="anonymous" src="./assets/register.jpg">
+      <img id="contact-thumb" crossorigin="anonymous" src="./assets/contact.jpg">
+      <img id="team-thumb" crossorigin="anonymous" src="./assets/team.jpg">
+      <img id="schedule-thumb" crossorigin="anonymous" src="./assets/schedule.jpg">
 
 
 
@@ -94,7 +92,7 @@ gtag('config', 'UA-89509670-2');
 
     </a-assets>
 
-    <a-sky src="./assets/space.jpg">
+    <a-sky src="../assets/space.jpg">
     </a-sky>
 
     <a-entity light="type: ambient; color: #FFFFFF"></a-entity>
@@ -132,13 +130,6 @@ gtag('config', 'UA-89509670-2');
     <a-entity id="sun" obj-model="obj: #sun-obj; mtl: #sun-mtl" position="150 1.35 -3" scale="0.15 0.15 0.15">
     </a-entity>
     <a-entity id="links">
-        <a-link href="team.html" title="My Homepage">
-        <a-entity template="src: #link"
-                  data-src="#cubes"
-                  data-thumb="#team-thumb"
-                  position="-5 2.5 -2"
-                  scale="1 1 1"
-                  rotation="0 60 0"></a-entity></a-link>
         <a-link href="about.html" title="My Homepage">
             <a-entity template="src: #link"
                       data-src="#cubes"
@@ -180,6 +171,13 @@ gtag('config', 'UA-89509670-2');
                   position="4.4 3 -2"
                   scale="0.75 0.75 0.75"
                   rotation="0 -50 0"></a-entity></a-link>
+        <a-link href="team.html" title="My Homepage">
+        <a-entity template="src: #link"
+                  data-src="#cubes"
+                  data-thumb="#team-thumb"
+                  position="5.2 3.4 -1.4"
+                  scale="0.75 0.75 0.75"
+                  rotation="0 -65 0"></a-entity></a-link>
     </a-entity>
 
 
@@ -203,6 +201,12 @@ gtag('config', 'UA-89509670-2');
         $(".se-pre-con").fadeOut("slow");;
     });
   </script>
+  <script type="text/javascript">
+    if (screen.width <= 700) {
+    document.location = "indexMob.html";
+    }
+    </script>
+    
   <script>
     var t = 0;
     function render() {
