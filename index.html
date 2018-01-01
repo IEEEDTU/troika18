@@ -5,52 +5,52 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89509670-2"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'UA-89509670-2');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-89509670-2');
 </script>
 
-   <script type="text/javascript">
-			console.log("%cTroika'18", "background: white; color: black; font-size: x-large");
-			console.log("  -Developed using A-frame.");
-			console.log("%c>> Developer", "background: white; color: black; font-size: small");
-			console.log("%c-->> SAGNIK BHOWMICK", "background: white; color: black; font-size: small");
-      console.log("%c-->> NIKHIL KUMAR MISHRA", "background: white; color: black; font-size: small");
-  </script>
+<script type="text/javascript">
+  console.log("%cTroika'18", "background: white; color: black; font-size: x-large");
+  console.log("  -Developed using A-frame.");
+  console.log("%c>> Developer", "background: white; color: black; font-size: small");
+  console.log("%c-->> SAGNIK BHOWMICK", "background: white; color: black; font-size: small");
+  console.log("%c-->> NIKHIL KUMAR MISHRA", "background: white; color: black; font-size: small");
+</script>
 
   <meta charset="utf-8">
   <title>Troika'18</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
-  <!-- <link rel="stylesheet" href="./css/style.css">   -->
-  <style>
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-    background: url(./img/Preloader_3.gif) center no-repeat #fff;
+  <noscript>
+    <style>.hameid-loader-overlay { display: none; } </style>
+  </noscript>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    jQuery(window).load(function(){
+        jQuery(".hameid-loader-overlay").fadeOut(500);
+    });
+</script>
+<style>
+  .hameid-loader-overlay {
+    width: 100%;
+    height: 100%;
+    background: url('./img/Preloader_3.gif') center no-repeat #FFF;
+    z-index: 99999;
+    position: fixed;
 }
-
 </style>
-  <script src="./script/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
   <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
   <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
   <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
   <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
   <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
-  <!-- <script src="script/nav-bar.js"></script> -->
-
 </head>
 
 <body>
   <!--Preloader-->
-  <div class="se-pre-con container-fluid"><a href="./indexMob.html"><p>Load Basic Version</p></a></div>
+  <div class="hameid-loader-overlay"><a href="./indexMob.html"><p>Load Basic Version</p></a></div>
   <a-scene>
     <a-assets>
       <a-asset-item id="earth-obj" src="./assets/earth-obj/earth.obj"></a-asset-item>
@@ -192,21 +192,7 @@ gtag('config', 'UA-89509670-2');
     </a-entity>
 
   </a-scene>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- <script src="./javaScript/script.js"></script>   -->
-  <script>
-  $(window).on('load', function() {
-        // Animate loader off screen
-        $(".se-pre-con").fadeOut("slow");;
-    });
-  </script>
-  <script type="text/javascript">
-    if (screen.width <= 700) {
-    document.location = "indexMob.html";
-    }
-    </script>
-    
   <script>
     var t = 0;
     function render() {
