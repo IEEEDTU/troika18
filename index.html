@@ -29,12 +29,6 @@
   src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
-  <script>
-      // document.querySelector( 'a-assets' ).addEventListener( 'loaded', () => console.log( 'a-assets loaded' ) );
-      jQuery(window).load(function(){
-          jQuery(".hameid-loader-overlay").fadeOut(500);
-      });
-  </script>
 <style>
   .hameid-loader-overlay{ 
 display: block; 
@@ -86,8 +80,9 @@ box-sizing: border-box;
 <body>
   <!--Preloader-->
   <div class="hameid-loader-overlay"><a href="./indexMob.html" style="font-size:30px;color:#fff;">Load Basic Version</a></div>
+  <!-- <div style="background:#000;margin-top:0px;"><p style="color:#fff">Hey</p></div> -->
   <a-scene>
-    <a-assets>
+    <a-assets timeout="25000">
       <a-asset-item id="earth-obj" src="./assets/earth-obj/earth.obj"></a-asset-item>
       <a-asset-item id="earth-mtl" src="./assets/earth-obj/earth.mtl"></a-asset-item>
       <a-asset-item id="moon-obj" src="./assets/Moon_3D_Model/moon.obj"></a-asset-item>
@@ -229,7 +224,9 @@ box-sizing: border-box;
   </a-scene>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
-      document.querySelector('a-assets').addEventListener( 'loaded', () => console.log( 'a-assets loaded' ) );
+      document.querySelector('a-assets').addEventListener( 'loaded', () => {
+        console.log( 'a-assets loaded' );
+        jQuery(".hameid-loader-overlay").fadeOut(500)});
   </script>
   <script>
     var t = 0;
