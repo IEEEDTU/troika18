@@ -1,0 +1,86 @@
+# Exported from 3D Builder
+
+newmtl Material.021
+Kd 0.639216 0.196078 0.156863
+
+newmtl White
+Kd 1.000000 1.000000 1.000000
+
+newmtl White_1
+Kd 1.000000 1.000000 1.000000
+map_Kd oatgrass.jpeg
+
+newmtl White_0
+Kd 1.000000 1.000000 1.000000
+map_Kd papyrus.jpg
+
+newmtl White_2
+Kd 1.000000 1.000000 1.000000
+map_Kd grey-surface.jpeg
+
+newmtl Material.023
+Kd 0.639216 0.196078 0.156863
+
+newmtl White_3
+Kd 1.000000 1.000000 1.000000
+map_Kd oattiles1.jpeg
+
+newmtl Material.026
+Kd 0.639216 0.078431 0.000000
+
+newmtl White
+Kd 1.000000 1.000000 1.000000
+
+newmtl Material.002
+Kd 0.639216 0.384314 0.180392
+
+newmtl Material.010
+Kd 0.639216 0.054902 0.003922
+
+newmtl Material.012
+Kd 0.639216 0.078431 0.000000
+
+newmtl Material.009
+Kd 0.639216 0.494118 0.184314
+
+newmtl Turquoise
+Kd 0.000000 0.627451 0.909804
+
+newmtl Material.020
+Kd 0.172549 0.058824 0.000000
+
+newmtl Material.008
+Kd 0.639216 0.023529 0.027451
+
+newmtl Material
+Kd 0.003922 0.321569 0.639216
+
+newmtl Material.005
+Kd 0.639216 0.447059 0.078431
+
+newmtl Material.003
+Kd 0.054902 0.639216 0.227451
+
+newmtl Material.004
+Kd 0.639216 0.329412 0.066667
+
+newmtl Material.007
+Kd 0.639216 0.376471 0.070588
+
+newmtl Material.022
+Kd 0.345098 0.031373 0.000000
+
+newmtl Material.011
+Kd 0.003922 0.000000 0.164706
+
+newmtl Material.001
+Kd 0.035294 0.639216 0.000000
+
+newmtl Material.013
+Kd 0.000000 0.000000 0.000000
+
+newmtl Material.014
+Kd 0.047059 0.000000 0.000000
+
+newmtl White_4
+Kd 1.000000 1.000000 1.000000
