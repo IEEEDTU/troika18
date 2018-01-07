@@ -160,7 +160,7 @@ box-sizing: border-box;
     <a-entity id="sun" obj-model="obj: #sun-obj; mtl: #sun-mtl" position="150 1.35 -3" scale="0.15 0.15 0.15">
     </a-entity>
     <a-entity id="links">
-        <a-link href="about.html" title="My Homepage">
+        <a-link href="about.html">
             <a-entity template="src: #link"
                       data-src="#cubes"
                       data-thumb="#about-thumb"
@@ -201,7 +201,7 @@ box-sizing: border-box;
                   position="4.4 3 -2"
                   scale="0.75 0.75 0.75"
                   rotation="0 -50 0"></a-entity></a-link>
-        <a-link href="team.html" title="My Homepage">
+        <a-link href="team.html">
         <a-entity template="src: #link"
                   data-src="#cubes"
                   data-thumb="#team-thumb"
@@ -211,12 +211,13 @@ box-sizing: border-box;
     </a-entity>
 
 
-    <a-entity camera look-controls position="0 1.5 0">
-        <a-cursor id="cursor" material="color: black;"
+    <a-entity camera look-controls position="0 1.75 0" >
+        <a-cursor id="cursor"
+          material="color: white;"
           animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
           animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
           event-set__1="_event: mouseenter; color: springgreen"
-          event-set__2="_event: mouseleave; color: red"
+          event-set__2="_event: mouseleave; color: white"
           fuse="true"
           raycaster="objects: .link"></a-cursor>
     </a-entity>
