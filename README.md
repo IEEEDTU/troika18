@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Troika'18 Website
 
 ## Expected File Structure
@@ -23,3 +24,9 @@
  ## Background Images
  
  https://drive.google.com/folderview?id=1S3v2Y7y9fwtUtg_LyMRV2EvUAvEIlHbq
+=======
+# troika18
+Website of annual techfest of IEEE DTU Student Branch
+
+Hosted at: https://sagn1k.github.io/troika18/
+>>>>>>> 60b9a54409028ae12a1a0c7d4e9a7b27e42b0074
