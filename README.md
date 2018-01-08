@@ -29,4 +29,3 @@
 Website of annual techfest of IEEE DTU Student Branch
 
 Hosted at: https://sagn1k.github.io/troika18/
->>>>>>> 60b9a54409028ae12a1a0c7d4e9a7b27e42b0074
