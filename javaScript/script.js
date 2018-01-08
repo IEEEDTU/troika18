@@ -46,25 +46,12 @@
     $(document).ready(function() {
         $('.beta-home-button').bind("mouseover", function(){
             var color  = $(this).css("background-color");
-            $(this).css("background", "#c19a6b");
-            $(this).css("border-color", "#c19a6b");
+            $(this).css("background", "#45A29E");
+            $(this).css("border-color", "#45A29E");
             $(this).bind("mouseout", function(){
                 $(this).css("background", color);
-                $(this).css("border-color", "black");
+                $(this).css("border-color", color);
             })    
         })    
     })
-
-    //google map api call
-
-    function initMap() {
-        var uluru = {lat: 28.7501, lng: 77.1177};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
+    

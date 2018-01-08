@@ -1,0 +1,105 @@
+.mu-hero-overlay,
+.mu-video-overlay {
+	/* background-color: #45A29E;fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #64b3f4, #66FCF1);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #64b3f4, #66FCF1); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: url('../img/oat.jpg');
+	background-size: cover;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	max-width:100%;
+	max-height:100%;
+	object-fit: contain'
+}
+
+.navbar{
+	background-color: #0B0C10;
+}
+
+.mu-primary-btn:hover,
+.mu-primary-btn:focus,
+.mu-copy-right a:hover,
+.mu-copy-right a:focus,
+.mu-send-msg-btn:hover,
+.mu-send-msg-btn:focus,
+.mu-faq-content .panel-title a:hover,
+.mu-faq-content .panel-title a:focus,
+.mu-faq-content .panel-title a[aria-expanded="true"],
+.mu-faq-content .panel-title a>span,
+.mu-menu ul li a:hover,
+.mu-menu ul li a:focus,
+.mu-single-speakers-info p,
+.mu-single-speakers-social li a:hover,
+.mu-single-speakers-social li a:focus,
+.mu-logo,
+.mu-logo:hover,
+.mu-logo:focus,
+#mu-hero .navbar-default .navbar-brand,
+.mu-navbar .mu-menu li a:hover,
+.mu-navbar .mu-menu li a:focus,
+.mu-single-event .mu-event-time {
+	color: #66FCF1;
+}
+
+.mu-speakers-slider .slick-next,
+.mu-speakers-slider .slick-prev,
+#mu-venue,
+.mu-popular-price .mu-price-tag,
+.mu-navbar .navbar-toggle,
+.mu-navbar .navbar-toggle:hover,
+.mu-navbar .navbar-toggle:focus,
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover,
+.mu-schedule-menu li a:hover,
+.mu-schedule-menu li a:focus,
+.mu-schedule-menu li.active a,
+.mu-schedule-menu li.active a:hover,
+.mu-schedule-menu li.active a:focus {
+	background-color: #66FCF1;
+}
+
+.mu-social-media a:hover,
+.mu-social-media a:focus {
+	border: 1px solid #66FCF1;
+	color: #66FCF1;
+}
+
+.mu-contact-form .form-control:focus,
+.mu-schedule-menu li a {
+	border: 1px solid #66FCF1;    
+} 
+
+.mu-send-msg-btn,
+.mu-send-msg-btn:focus,
+.mu-details-btn:hover,
+.mu-details-btn:focus,
+.mu-popular-price .mu-details-btn {
+	border: 1px solid #66FCF1;
+	background-color: #66FCF1;
+}
+
+.mu-faq-content .panel-default > .panel-heading + .panel-collapse > .panel-body {
+	border-top-color: #66FCF1;
+
+}
+
+.mu-reg-submit-btn:hover,
+.mu-reg-submit-btn:focus {
+	background-color: #66FCF1;
+	border: 2px solid #66FCF1;
+}
+
+.navbar-brand{
+	color:#C5C6C7 !important;	
+	padding: 20px;
+}
+
+.navbar-brand:hover{
+	color:white !important;	
+}
+
+.navbar-toggle{
+	background-color: #0B0C10 !important;
+}
+

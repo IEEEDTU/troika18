@@ -1,197 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Schedule</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/143a68b686.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/schedule.css">
-    <style>
-        body{
-            background-color: black;
-        }
-    </style>
-</head>
-<body>
 
-<div style="overflow-x: hidden">
-    <nav class="navbar navbar-expand-lg justify-content-between" style="border-bottom: solid white 1px;">
-        <div class="navbar-header ml-5">
-            <a href="#"><img src="img/ieee_dtu.gif" height="40px" style="margin:10px;"></a>
-            <a href="#"><img src="img/dtu_logo.png" height="40px" style="margin:10px;"></a>
-        </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89509670-2"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="background-color: beige">
-            <span ><i class="fa fa-bars" aria-hidden="true"></i></span>
-        </button>
+  gtag('config', 'UA-89509670-2');
+  </script>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
-            <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item ml-2"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item ml-2"><a class="nav-link" href="#" >About</a></li>
-                <li class="nav-item ml-2"><a class="active nav-link" href="#" >Schedule</a></li>
-                <li class="nav-item ml-2"><a class="nav-link"  href="#"  >Sponsors</a></li>
-                <li class="nav-item ml-2"><a class="nav-link" href="#"  >Contact Us</a></li>
-                <li class="nav-item ml-2"><a class="nav-link"     href="#" >Register</a></li>
-            </ul>
-        </div>
-    </nav>
+     <script type="text/javascript">
+        console.log("%cTroika'18", "background: white; color: black; font-size: x-large");
+        console.log("  -Developed using A-frame.");
+        console.log("%c>> Developer", "background: white; color: black; font-size: small");
+        console.log("%c-->> SAGNIK BHOWMICK", "background: white; color: black; font-size: small");
+        console.log("%c-->> NIKHIL KUMAR MISHRA", "background: white; color: black; font-size: small");
+    </script>
 
-    <div  id="abc" style="padding: 10px;">
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div >
-                <img src="img/TroikaFinal.png" id="troika"  >
+    <title>Troika'18</title>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link href="css/slick.css" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="css/event-default-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/event-style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Shadows Into Light' rel='stylesheet'>
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+    <!-- Open Sans for body font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+    <!-- Montserrat for title -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-icon-76x76.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/ico/android-icon-192x192.png">
+  </head>
+
+  <body>
+
+    <!-- Start Header -->
+
+
+        			   <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://ieeedtu.com/" title="IEEE DTU" target="_blank">
+                  <img src="./img/ieee_dtu.gif" alt="IEEE DTU" class="img-responsive" style="width: 20px; height: 20px;">
+                </a>
+                <a class="navbar-brand" href="http://dtu.ac.in/" title="Delhi Technological University" target="_blank">
+                  <img src="./img/dtu_logo.png" alt="DTU" class="img-responsive" style="width: 20px; height: 20px;">
+                </a>
+                <a class="navbar-brand page-scroll" href="./index.html"><div style="font-family: Shadows Into Light; font-size: 40px; color: white">TROIKA'18</div></a>
             </div>
-            <p style="text-align: center;color: aqua;font-size: 50px;font-weight: 600;font-family: Times New Roman, Times, serif;">The Annual Technical Fest of IEEE DTU</p>
-        </div>
-    </div>
 
-    <div class="container-fluid" >
-        <p style="text-align: center;color: aqua;font-size: 50px;font-weight:bold;font-family: Times New Roman, Times, serif;">10 February - 12 February</p>
-        <div class="row no-gutters justify-content-center">
-        <div class="col-md-1 time" id="day"></div>
-        <div class="col-md-1 time" id="hour"></div>
-        <div class="col-md-1 time" id="min"></div>
-        <div class="col-md-1 time" id="sec"></div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+					                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                        <li class=""><a href="./indexMob.html" class="page-scroll" class="cool-link" style="font-size: 14px;">Home</a></li>
+				        <li class=""><a href="#mu-schedule" class="page-scroll" class="cool-link" style="font-size: 14px;">Schedule</a></li>
+				        <li class=""><a href="#mu-sponsors" class="page-scroll" class="cool-link" style="font-size: 14px;">Sponsors</a></li>
+			            <li class=""><a href="./events.html" class="page-scroll" class="cool-link" style="font-size: 14px;">Events</a></li>
+			            <li class=""><a href="#mu-contact" class="page-scroll" class="cool-link" style="font-size: 14px;">Contact</a></li>
+			            <li class=""><a href="./coming.html" class="page-scroll" class="cool-link" style="font-size: 14px;">Register</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    </div>
-    <script src="javaScript/timer.js"></script>
+	</nav>
+        <!-- End menu -->
 
-    <ul class="nav nav-tabs mt-1" id="myTab" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active text-center "  data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Day-1</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-center"  data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Day-2</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-center" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Day-3</a>
-        </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <table class="table">
-                <thead>
-                <tr>
-                    <th scope="col">Time</th>
-                    <th scope="col">Event</th>
-                    <th scope="col">Venue</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">10:00am</th>
-                    <td>Radix</td>
-                    <td>Civil Raised Platform</td>
+        <div class="mu-hero-overlay" style="background-image: url('./img/BGEvent.jpg');background-repeat:no-repeat;background-size:contain;background-position:center;">
+            <div class="container">
+                <div class="mu-hero-area">
 
-                </tr>
-                <tr>
-                    <th scope="row">12:00 pm</th>
-                    <td>Electrocution</td>
-                    <td>SPS-14</td>
-                </tr>
-                <tr>
-                    <th scope="row">1:00 pm</th>
-                    <td>Brainwave</td>
-                    <td>the Bird</td>
-                </tr>
-                <tr>
-                    <th scope="row">1:00 pm</th>
-                    <td>Todo en Uno</td>
-                    <td>the Bird</td>
-                </tr>
-                <tr>
-                    <th scope="row">1:00 pm</th>
-                    <td>S-PAC</td>
-                    <td>the Bird</td>
-                </tr>
-                </tbody>
-            </table>
+                    <!-- Start hero featured area -->
+                    <div class="mu-hero-featured-area">
+
+
+                        <div class="mu-hero-featured-content">
+
+                            <h1>Troika</h1>
+                            <h2>The Annual Technical Fest of IEEE DTU</h2>
+                            <p class="mu-event-date-line">Coming Soon</p>
+
+                            <div class="mu-event-counter-area">
+                                <div id="mu-event-counter">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End hero featured area -->
+
+                </div>
+            </div>
         </div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <table class="table">
-                <thead>
-                <tr>
-                    <th scope="col">Time</th>
-                    <th scope="col">Event</th>
-                    <th scope="col">Venue</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">10:00am</th>
-                    <td>Mist</td>
-                    <td>Civil Raised Platform</td>
-                </tr>
-                <tr>
-                    <th scope="row">12:00 pm</th>
-                    <td>Bits</td>
-                    <td>SPS-14</td>
-                </tr>
-                <tr>
-                    <th scope="row">1:00 pm</th>
-                    <td>Bots</td>
-                    <td>the Bird</td>
-                </tr>
-                <tr>
-                    <th scope="row">1:00 pm</th>
-                    <td>Bytes</td>
-                    <td>the Bird</td>
-                </tr>
-                <tr>
-                    <th scope="row">1:00 pm</th>
-                    <td>T-HACKS</td>
-                    <td>the Bird</td>
-                </tr>
-                <tr>
-                    <th scope="row">1:00 pm</th>
-                    <td>Design Pro</td>
-                    <td>the Bird</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab" >
-            <table class="table">
-                <thead>
-                <tr>
-                    <th scope="col" style="text-align: center">Time</th>
-                    <th scope="col">Event</th>
-                    <th scope="col">Venue</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">10:00am</th>
-                    <td>Bulls 'n' Bears</td>
-                    <td>Civil Raised Platform</td>
-                </tr>
-                <tr>
-                    <th scope="row">12:00 pm</th>
-                    <td>S-PAV</td>
-                    <td>SPS-14</td>
-                </tr>
-                <tr>
-                    <th scope="row">1:00 pm</th>
-                    <td>Prize Distribution</td>
-                    <td>the Bird</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div id="footer">
-        All Rights Reserved.<br>Designed by IEEE DTU<br>
-        <a href="#" style="color: black"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href="#" style="color: black"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-        <a href="#" style="color: black "><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-    </div>
-</div>
-</body>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start main content -->
+    <main role="main">
+
+        <!-- Start Schedule  -->
+        <section id="mu-schedule" style = "background-color: #1F2833">
+            <div class="container">
+                <div class="row">
+                    <div class="colo-md-12">
+                        <div class="mu-schedule-area">
+
+                            <div class="mu-title-area">
+                                <h2 style="color:white">Schedule</h2>
+
+                            </div>
+
+                            <div class="mu-schedule-content-area">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs mu-schedule-menu" role="tablist">
+                                    <li role="presentation" class="active"><a href="#first-day" aria-controls="first-day" role="tab" data-toggle="tab">Day 1</a></li>
+                                    <li role="presentation"><a href="#second-day" aria-controls="second-day" role="tab" data-toggle="tab">Day 2</a></li>
+                                    <li role="presentation"><a href="#third-day" aria-controls="third-day" role="tab" data-toggle="tab">Day 3</a></li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content mu-schedule-content">
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="first-day">
+                                        <ul>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="second-day">
+                                        <ul>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="third-day">
+                                        <ul>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3>Coming Soon</h3>
+                                                    <h3>Event</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Schedule -->
+
+
+        <!-- Start Sponsors -->
+        <section id="mu-sponsors">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-sponsors-area">
+
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">Past Sponsors</h2>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint assumenda ut molestias doloremque ipsam, fugit laborum totam, pariatur est cumque at, repudiandae officia ex dolores quas minus optio, iusto soluta?</p> -->
+                            </div>
+
+                            <!-- Start spnonsors brand logo -->
+                            <div class="mu-sponsors-content">
+                                <div class="row">
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="img/sponsors/CB.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="img/sponsors/cb1.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="img/sponsors/codepen.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="img/sponsors/flock.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+
+                                        <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="img/sponsors/img-5.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="img/sponsors/img-6.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="img/sponsors/img-9.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="img/sponsors/WAC.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="img/sponsors/zebronics.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+
+                                        <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="img/sponsors/ola.png" alt="Brand Logo">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="img/sponsors/sbi.jpg" alt="Brand Logo">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+                                            <img src="img/sponsors/sail.jpg" alt="Brand Logo">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- End spnonsors brand logo -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Sponsors -->
+
+        <!-- Start Contact -->
+        <section id="mu-contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-contact-area">
+
+                            <div class="mu-title-area">
+                                <h2 class="mu-heading-title">Become a sponsor</h2>
+                                <a href="img/sponsors/brochure.pdf" class="btn btn-default btn-lg" style="color :black;">Brochure</a>
+
+                                <!-- <p class="contacts">Yaman Arora : +91 8287433970 <br>
+                                Rashi Goel : +91 8586833120 </p> -->
+                                <a href="mailto:contact@ieeedtu.com" target="_blank" style="color :white;"><p>contact@ieeedtu.com</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact -->
+
+    </main>
+
+    <!-- End main content -->
+
+
+    <!-- Start footer -->
+    <footer id="mu-footer" role="contentinfo">
+            <div class="container">
+                <div class="mu-footer-area">
+                    <div class="mu-footer-top">
+                        <div class="mu-social-media">
+                            <a href="https://www.facebook.com/TroikaIeeeDTU/" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/dtu_ieee" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/ieee.dtu/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/7604169/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com/user/ieeedtu" target="_blank"><i class="fa fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="mu-footer-bottom">
+                        <p class="mu-copy-right">&copy; All right reserved.</p>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+    <!-- End footer -->
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Slick slider -->
+    <script type="text/javascript" src="javaScript/slick.min.js"></script>
+    <!-- Event Counter -->
+    <script type="text/javascript" src="javaScript/jquery.countdown.min.js"></script>
+    <!-- Ajax contact form  -->
+    <script type="text/javascript" src="javaScript/app.js"></script>
+    <!-- Custom js -->
+    <script type="text/javascript" src="javaScript/event-script.js"></script>
+
+
+
+
+  </body>
 </html>
