@@ -16,6 +16,19 @@ ul {
 	margin: 0;
 }
 
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+#Arrivin {
+    display: inline-block;
+    border-right: .1em solid white;
+    width: 205px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 2s steps(11, end),
+    blink-caret .5s step-end infinite alternate;
+}
+
 ul li {
 	list-style: disc;
 	font-size: 17px;
@@ -293,6 +306,16 @@ button:focus {
 	color: #fff;
 	font-size: 45px;
 	font-weight: 300;
+	margin-top: 20px ;
+
+}
+
+.mu-hero-featured-content h3 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 300;
+    margin-top: 35px ;
+
 }
 
 .mu-event-date-line {
@@ -307,7 +330,7 @@ button:focus {
 .mu-event-counter-area {
 	display: inline;
 	float: left;
-	margin-top: 50px;
+	margin-top: 45px;
 	width: 100%;
 }
 
