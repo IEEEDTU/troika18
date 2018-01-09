@@ -152,8 +152,9 @@ box-sizing: border-box;
       <a-asset-item id="sat-mtl" src="./assets/nasa-aqua-satellite-obj/nasa-aqua-satellite.mtl"></a-asset-item>
       <a-asset-item id="mars-obj" src="./assets/mars-obj/mars.obj"></a-asset-item>
       <a-asset-item id="mars-mtl" src="./assets/mars-obj/mars.mtl"></a-asset-item>
-      <a-asset-item id="oat-obj" src="./assets/dtu-oat/final.obj"></a-asset-item>
-      <a-asset-item id="oat-mtl" src="./assets/dtu-oat/final1111.mtl"></a-asset-item>
+      <!-- <a-asset-item id="oat-obj" src="./assets/dtu-oat/final.obj"></a-asset-item>
+      <a-asset-item id="oat-mtl" src="./assets/dtu-oat/final1111.mtl"></a-asset-item> -->
+      <a-asset-item id="oat" src="./assets/dtu-oat/final.gltf"></a-asset-item>
       <a-asset-item id="sun-obj" src="./assets/sun-obj/sun.obj"></a-asset-item>
       <a-asset-item id="sun-mtl" src="./assets/sun-obj/sun.mtl"></a-asset-item>
       <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
@@ -184,7 +185,7 @@ box-sizing: border-box;
              to="0 360 0"
              repeat="indefinite"></a-animation>
     </a-entity>
-    <a-entity id="oatdtu" obj-model="obj: #oat-obj; mtl: #oat-mtl" position="-1 0.75 -6" scale="0.008 0.008 0.008" rotation="270 0 270">
+    <a-entity id="oatdtu" gltf-model="#oat" position="-1 0.75 -6" scale="0.008 0.008 0.008" rotation="270 0 270">
     </a-entity>
 
     <a-entity id="sun" obj-model="obj: #sun-obj; mtl: #sun-mtl" position="150 1.35 -3" scale="0.15 0.15 0.15">
