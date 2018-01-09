@@ -147,6 +147,17 @@ button:focus {
     margin-left: 8cm;
     font-size: 20px;
 }
+
+.sponsor{
+	height: 16vh;
+	width: 20vh;
+	display: block;
+    padding: 4px;
+    margin-bottom: 16px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 4px;
+}
    
 
 
@@ -445,7 +456,6 @@ button:focus {
 }
 	
 .mu-title-area {
-	display: inline;
 	float: left;
 	text-align: center;
 	padding: 0 120px;
@@ -1110,7 +1120,6 @@ button:focus {
 
 #mu-sponsors {
 	background-color: #fff;
-	display: inline;
 	float: left;
 	width: 100%;
 }
@@ -1123,19 +1132,20 @@ button:focus {
 }
 
 .mu-sponsors-content {
-	display: inline;
 	float: left;
 	margin-top: 50px;
 	width: 100%;
+	margin-left: 4vh;
 }
 
 .mu-sponsors-single {
-	background: #eee;
-	display: inline;
+	background: #fff;
+	max-width: 75%;
+	height: 75%;
 	float: left;
 	margin-top: 10px;
 	margin-bottom: 15px;
-	width: 100%;
+	line-height: 30vh;	
 }
 
 
@@ -1209,9 +1219,8 @@ button:focus {
 /*--------------------*/
 
 #mu-contact {
-	background-color: #1F2833;
+	background-image: url("../img/sponsors/contact.jpg");
     color:#fff;
-	display: inline;
 	float: left;
 	width: 100%;
 }
