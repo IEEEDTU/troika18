@@ -144,19 +144,13 @@ box-sizing: border-box;
 
   <a-scene>
     <a-assets timeout="25000">
-      <a-asset-item id="earth-obj" src="./assets/earth-obj/earth.obj"></a-asset-item>
-      <a-asset-item id="earth-mtl" src="./assets/earth-obj/earth.mtl"></a-asset-item>
+      <a-asset-item id="earth" src="./assets/earth-obj/earth.gltf"></a-asset-item>
       <a-asset-item id="moon-obj" src="./assets/Moon_3D_Model/moon.obj"></a-asset-item>
       <a-asset-item id="moon-mtl" src="./assets/Moon_3D_Model/moon.mtl"></a-asset-item>
-      <a-asset-item id="sat-obj" src="./assets/nasa-aqua-satellite-obj/nasa-aqua-satellite.obj"></a-asset-item>
-      <a-asset-item id="sat-mtl" src="./assets/nasa-aqua-satellite-obj/nasa-aqua-satellite.mtl"></a-asset-item>
-      <a-asset-item id="mars-obj" src="./assets/mars-obj/mars.obj"></a-asset-item>
-      <a-asset-item id="mars-mtl" src="./assets/mars-obj/mars.mtl"></a-asset-item>
-      <!-- <a-asset-item id="oat-obj" src="./assets/dtu-oat/final.obj"></a-asset-item>
-      <a-asset-item id="oat-mtl" src="./assets/dtu-oat/final1111.mtl"></a-asset-item> -->
+      <a-asset-item id="sat" src="./assets/nasa-aqua-satellite-obj/nasa-aqua-satellite.gltf"></a-asset-item>
+      <a-asset-item id="mars" src="./assets/mars-obj/mars.gltf"></a-asset-item>
       <a-asset-item id="oat" src="./assets/dtu-oat/final.gltf"></a-asset-item>
-      <a-asset-item id="sun-obj" src="./assets/sun-obj/sun.obj"></a-asset-item>
-      <a-asset-item id="sun-mtl" src="./assets/sun-obj/sun.mtl"></a-asset-item>
+      <a-asset-item id="sun" src="./assets/sun-obj/sun.gltf"></a-asset-item>
       <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
 
     </a-assets>
@@ -165,7 +159,7 @@ box-sizing: border-box;
     </a-sky>
 
     <a-entity light="type: ambient; color: #FFFFFF"></a-entity>
-    <a-entity obj-model="obj: #earth-obj; mtl: #earth-mtl" position="8 1.5 -4" scale="1.5 1.5 1.5">
+    <a-entity gltf-model="#earth" position="8 1.5 -4" scale="1.5 1.5 1.5">
       <a-animation attribute="rotation"
              dur="10000"
              to="0 360 0"
@@ -173,13 +167,13 @@ box-sizing: border-box;
     </a-entity>
     <a-entity id="moon" obj-model="obj: #moon-obj; mtl: #moon-mtl" scale="0.003 0.003 0.003">
     </a-entity>
-    <a-entity id="satellite" obj-model="obj: #sat-obj; mtl: #sat-mtl" scale="0.08 0.08 0.08">
+    <a-entity id="satellite" gltf-model="#sat" scale="0.08 0.08 0.08">
       <a-animation attribute="rotation"
              dur="50000"
              to="0 360 0"
              repeat="indefinite"></a-animation>
     </a-entity>
-    <a-entity id="mars" obj-model="obj: #mars-obj; mtl: #mars-mtl" position="-13 1.5 -13" scale="1.6 1.6 1.6">
+    <a-entity id="mars" gltf-model="#mars" position="-13 1.5 -13" scale="1.6 1.6 1.6">
       <a-animation attribute="rotation"
              dur="10000"
              to="0 360 0"
@@ -188,7 +182,7 @@ box-sizing: border-box;
     <a-entity id="oatdtu" gltf-model="#oat" position="-1 0.75 -6" scale="0.008 0.008 0.008" rotation="270 0 270">
     </a-entity>
 
-    <a-entity id="sun" obj-model="obj: #sun-obj; mtl: #sun-mtl" position="150 1.35 -3" scale="0.15 0.15 0.15">
+    <a-entity id="sun" gltf-model="#sun" position="150 1.35 -3" scale="0.15 0.15 0.15">
     </a-entity>
 
 
