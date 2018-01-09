@@ -27,5 +27,9 @@ AFRAME.registerComponent('nav-bar', {
         data.target.setAttribute('material', 'src', data.src);
       }, data.dur);
     });
+<<<<<<< HEAD
   }
 })
+=======
+  },
+>>>>>>> 60b9a54409028ae12a1a0c7d4e9a7b27e42b0074
