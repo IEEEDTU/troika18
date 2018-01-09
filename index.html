@@ -22,6 +22,16 @@
   <meta charset="utf-8">
   <title>Troika'18</title>
   <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Shadows Into Light' rel='stylesheet'>
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <noscript>
     <style>.hameid-loader-overlay { display: none; } </style>
   </noscript>
@@ -30,16 +40,16 @@
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
 <style>
-  .hameid-loader-overlay{ 
-display: block; 
-position: fixed; 
-top: 0; 
-left: 0; 
-right: 0; 
-bottom: 0; 
-background: #000; 
+  .hameid-loader-overlay{
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #000;
 /* text-indent: -9000px;  */
-z-index: 9; 
+z-index: 9;
 }
 
 .hameid-loader-overlay::before {
@@ -47,8 +57,8 @@ content: '';
 height: 40px;
 width: 40px;
 position: absolute;
-left: 50%; 
-top: 50%; 
+left: 50%;
+top: 50%;
 margin-top: -20px;
 margin-left: -20px;
 -webkit-animation: rotation .6s infinite linear;
@@ -60,8 +70,8 @@ border-right: 6px solid rgba(255, 255, 255, .15);
 border-bottom: 6px solid rgba(255, 255, 255, .15);
 border-top: 6px solid rgba(255, 255, 255, .8);
 border-radius: 100%;
--webkit-box-sizing: border-box; 
--moz-box-sizing: border-box; 
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
 box-sizing: border-box;
 }
 @-webkit-keyframes rotation { from { -webkit-transform: rotate(0deg); } to { -webkit-transform: rotate(359deg); } }
@@ -81,6 +91,57 @@ box-sizing: border-box;
   <!--Preloader-->
   <div class="hameid-loader-overlay"><a href="./indexMob.html" style="font-size:30px;color:#fff;">Load Basic Version</a></div>
   <!-- <div style="background:#000;margin-top:0px;"><p style="color:#fff">Hey</p></div> -->
+  <div class="title-home">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://ieeedtu.com/" title="IEEE DTU" target="_blank">
+                  <img src="./img/ieee_dtu.gif" alt="IEEE DTU" class="img-responsive">
+                </a>
+                <a class="navbar-brand" href="http://dtu.ac.in/" title="Delhi Technological University" target="_blank">
+                  <img src="./img/dtu_logo.png" alt="DTU" class="img-responsive">
+                </a>
+                <a class="navbar-brand page-scroll" href="index.html"><div style="font-family: Shadows Into Light; font-size: 40px; color: white">TROIKA'18</div></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="">HOME</a>
+                    </li>
+                    <li class="">
+                      <a class="page-scroll" href="./events.html">EVENTS</a>
+                    </li>
+                    <li class="">
+                      <a class="page-scroll" href="./schedule.html">SCHEDULE</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="./schedule.html#mu-sponsors">SPONSORS</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#contact">CONTACT US</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="./coming.html">REGISTER</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  </nav>
+
+  </div>
+
   <a-scene>
     <a-assets timeout="25000">
       <a-asset-item id="earth-obj" src="./assets/earth-obj/earth.obj"></a-asset-item>
@@ -93,32 +154,9 @@ box-sizing: border-box;
       <a-asset-item id="mars-mtl" src="./assets/mars-obj/mars.mtl"></a-asset-item>
       <a-asset-item id="oat-obj" src="./assets/dtu-oat/final.obj"></a-asset-item>
       <a-asset-item id="oat-mtl" src="./assets/dtu-oat/final1111.mtl"></a-asset-item>
-      <!-- <a-asset-item id="cld-obj" src="./assets/island-cloud-mod-obj/island-cloud-mod.obj"></a-asset-item>
-      <a-asset-item id="cld-mtl" src="./assets/island-cloud-mod-obj/island-cloud-mod.mtl"></a-asset-item> -->
       <a-asset-item id="sun-obj" src="./assets/sun-obj/sun.obj"></a-asset-item>
       <a-asset-item id="sun-mtl" src="./assets/sun-obj/sun.mtl"></a-asset-item>
       <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-      <img id="about-thumb" crossorigin="anonymous" src="./assets/about.jpg">
-      <img id="event-thumb" crossorigin="anonymous" src="./assets/events.jpg">
-      <img id="sponsors-thumb" crossorigin="anonymous" src="./assets/sponsors.jpg">
-      <img id="register-thumb" crossorigin="anonymous" src="./assets/register.jpg">
-      <img id="contact-thumb" crossorigin="anonymous" src="./assets/contact.jpg">
-      <img id="team-thumb" crossorigin="anonymous" src="./assets/team.jpg">
-      <img id="schedule-thumb" crossorigin="anonymous" src="./assets/schedule.jpg">
-
-
-
-      <script id="link" type="text/html">
-          <a-entity class="link"
-            geometry="primitive: plane; height: 1; width: 1"
-            material="shader: flat; src: ${thumb}"
-            event-set__1="_event: mousedown; scale: 1 1 1"
-            event-set__2="_event: mouseup; scale: 1.2 1.2 1.2"
-            event-set__3="_event: mouseenter; scale: 1.2 1.2 1.2"
-            event-set__4="_event: mouseleave; scale: 1 1 1"
-            nav-bar="on: click; target: #image-360; src: ${src}"
-            sound="on: click; src: #click-sound"></a-entity>
-        </script>
 
     </a-assets>
 
@@ -146,80 +184,14 @@ box-sizing: border-box;
              to="0 360 0"
              repeat="indefinite"></a-animation>
     </a-entity>
-    <a-entity id="oatdtu" obj-model="obj: #oat-obj; mtl: #oat-mtl" position="-1 0.75 -4" scale="0.008 0.008 0.008" rotation="270 0 270">
+    <a-entity id="oatdtu" obj-model="obj: #oat-obj; mtl: #oat-mtl" position="-1 0.75 -6" scale="0.008 0.008 0.008" rotation="270 0 270">
     </a-entity>
-    <!-- <a-entity id="cld" obj-model="obj: #cld-obj; mtl: #cld-mtl" position="-1 3.5 -4" scale="0.005 0.005 0.005">
-    </a-entity>
-    <a-entity id="cld" obj-model="obj: #cld-obj; mtl: #cld-mtl" position="-0.25 3.5 -4" scale="0.005 0.005 0.005">
-    </a-entity>
-    <a-entity id="cld" obj-model="obj: #cld-obj; mtl: #cld-mtl" position="-0.3 3.5 -3.25" scale="0.005 0.005 0.005">
-    </a-entity> -->
-    <!-- <a-entity id="rov" obj-model="obj: #rov-obj; mtl: #rov-mtl" position="0.5 1.15 -1.3" scale="0.002 0.002 0.002">
-      <a-entity template="src: #link"></a-entity>
-    </a-entity> -->
+
     <a-entity id="sun" obj-model="obj: #sun-obj; mtl: #sun-mtl" position="150 1.35 -3" scale="0.15 0.15 0.15">
     </a-entity>
-    <a-entity id="links">
-        <a-link href="about.html">
-            <a-entity template="src: #link"
-                      data-src="#cubes"
-                      data-thumb="#about-thumb"
-                      position="-2.7 2.2 -2"
-                      scale="0.65 0.65 0.65"
-                      rotation="0 45 0"></a-entity></a-link>
-        <a-link href="schedule.html">
-        <a-entity template="src: #link"
-                  data-src="#city"
-                  data-thumb="#schedule-thumb"
-                  position="-2 2.1 -2.5"
-                  scale="0.6 0.6 1"
-                  rotation="0 30 0"></a-entity></a-link>
-        <a-link href="events.html">
-        <a-entity template="src: #link"
-                  data-src="#sechelt"
-                  data-thumb="#event-thumb"
-                  position="-0.95 2 -3"
-                  scale="0.75 0.75 1"></a-entity></a-link>
-        <a-link href="schedule.html#mu-sponsors">
-        <a-entity template="src: #link"
-                  data-src="#cubes"
-                  data-thumb="#sponsors-thumb"
-                  position="3 2 -2.8"
-                  scale="0.75 0.75 0.75"
-                  rotation="0 -20 0"></a-entity></a-link>
-        <a-link href="contact.html">
-        <a-entity template="src: #link"
-                  data-src="#city"
-                  data-thumb="#contact-thumb"
-                  position="3.6 2.5 -2.4"
-                  scale="0.65 0.65 0.65"
-                  rotation="0 -35 0"></a-entity></a-link>
-        <a-link href="coming.html">
-        <a-entity template="src: #link"
-                  data-src="#sechelt"
-                  data-thumb="#register-thumb"
-                  position="4.4 3 -2"
-                  scale="0.75 0.75 0.75"
-                  rotation="0 -50 0"></a-entity></a-link>
-        <a-link href="team.html">
-        <a-entity template="src: #link"
-                  data-src="#cubes"
-                  data-thumb="#team-thumb"
-                  position="5.2 3.4 -1.4"
-                  scale="0.75 0.75 0.75"
-                  rotation="0 -65 0"></a-entity></a-link>
-    </a-entity>
 
 
-    <a-entity camera look-controls position="0 1.75 0" >
-        <a-cursor id="cursor"
-          material="color: white;"
-          animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
-          animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
-          event-set__1="_event: mouseenter; color: springgreen"
-          event-set__2="_event: mouseleave; color: white"
-          fuse="true"
-          raycaster="objects: .link"></a-cursor>
+    <a-entity camera look-controls position="0 2 0" id="world">
     </a-entity>
 
   </a-scene>
@@ -236,6 +208,7 @@ box-sizing: border-box;
       requestAnimationFrame(render);
       satellite.setAttribute('position', (5*Math.sin(t)+8)+ ' 1.5 ' +(5*Math.cos(t)-4));
       moon.setAttribute('position', (15*Math.cos(t)+8)+ ' 1.5 ' +(11*Math.sin(t)-4));
+      world.setAttribute('position', (3*Math.cos(t)+1)+ ' 2 ' +(3*Math.sin(t)-4));
           }
     render()
   </script>
