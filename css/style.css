@@ -92,7 +92,9 @@ a.active {
     color: black;
     background-color: #c5c6c7;
 }
-
+.card{
+    width:90%;
+}
 @media only screen and (max-width: 768px) {
 
     .navbar-default {
