@@ -5,12 +5,27 @@ body {
     overflow-x: hidden;
 }
 h1{
-  color: #fff;
+  color: #66FCF1;
 	text-align: center;
   font-family: 'Josefin Sans',sans-serif;
   margin-top: 60px;
 	margin-bottom: 0;
 	font-size:63px;
+  padding-top: 20px;
+}
+h3{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.anchor{
+  color: #66FCF1;
+}
+
+.row.title{
+  font-weight: bold;
+  margin-bottom:30px;
 }
 
 button:focus {outline:0;}
@@ -166,9 +181,9 @@ button:focus {outline:0;}
       transition: all 0.3s;
 }
 hr{
-	margin-top: 00px;
-	border: 1.5px solid #dafcff;
-    width: 20%!important;
+	margin-top: 20px;
+	border: 1.0px solid #dafcff;
+    width: 100%!important;
     text-align: center;
 
 }
@@ -178,7 +193,7 @@ hr{
   margin: auto;
 	text-align:center;
   margin-bottom: 5%;
-
+  font-family:Lato, sans-serif;
 }
 
 .title {
@@ -202,7 +217,8 @@ hr{
 }
 
 .button:hover {
-  background-color: #555;
+  /*background-color: #555;*/
+  background-color:#1F2833; 
   text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
 
 
@@ -216,7 +232,7 @@ hr{
 }
 
 .button.is-checked {
-  color: grey;
+  color: #0B0C10;
   text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
 }
 
@@ -537,6 +553,11 @@ figure.effect-bubba:hover p {
 	text-transform: uppercase;
 	font-size: 15px;
 }
+
+.cat:hover{
+  color: #66FCF1;
+}
+
 @media only screen and (max-width: 365px){
     .eventcontainer{
         margin-left: 2.2em;
