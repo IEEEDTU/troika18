@@ -16,6 +16,19 @@ ul {
 	margin: 0;
 }
 
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+#Arrivin {
+    display: inline-block;
+    border-right: .1em solid white;
+    width: 205px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 2s steps(11, end),
+    blink-caret .5s step-end infinite alternate;
+}
+
 ul li {
 	list-style: disc;
 	font-size: 17px;
@@ -146,6 +159,17 @@ button:focus {
     font-family: cursive;
     margin-left: 8cm;
     font-size: 20px;
+}
+
+.sponsor{
+	height: 16vh;
+	width: 20vh;
+	display: block;
+    padding: 4px;
+    margin-bottom: 16px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 4px;
 }
    
 
@@ -282,6 +306,16 @@ button:focus {
 	color: #fff;
 	font-size: 45px;
 	font-weight: 300;
+	margin-top: 20px ;
+
+}
+
+.mu-hero-featured-content h3 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 300;
+    margin-top: 35px ;
+
 }
 
 .mu-event-date-line {
@@ -296,7 +330,7 @@ button:focus {
 .mu-event-counter-area {
 	display: inline;
 	float: left;
-	margin-top: 50px;
+	margin-top: 45px;
 	width: 100%;
 }
 
@@ -445,7 +479,6 @@ button:focus {
 }
 	
 .mu-title-area {
-	display: inline;
 	float: left;
 	text-align: center;
 	padding: 0 120px;
@@ -1110,7 +1143,6 @@ button:focus {
 
 #mu-sponsors {
 	background-color: #fff;
-	display: inline;
 	float: left;
 	width: 100%;
 }
@@ -1123,19 +1155,20 @@ button:focus {
 }
 
 .mu-sponsors-content {
-	display: inline;
 	float: left;
 	margin-top: 50px;
 	width: 100%;
+	margin-left: 4vh;
 }
 
 .mu-sponsors-single {
-	background: #eee;
-	display: inline;
+	background: #fff;
+	max-width: 75%;
+	height: 75%;
 	float: left;
 	margin-top: 10px;
 	margin-bottom: 15px;
-	width: 100%;
+	line-height: 30vh;	
 }
 
 
@@ -1209,9 +1242,8 @@ button:focus {
 /*--------------------*/
 
 #mu-contact {
-	background-color: #1F2833;
+	background-image: url("../img/sponsors/contact.jpg");
     color:#fff;
-	display: inline;
 	float: left;
 	width: 100%;
 }
