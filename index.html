@@ -32,6 +32,9 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./css/modalStyle.css">
+
   <noscript>
     <style>.hameid-loader-overlay { display: none; } </style>
   </noscript>
@@ -90,6 +93,40 @@ box-sizing: border-box;
 <body>
   <!--Preloader-->
   <div class="hameid-loader-overlay"><a href="./indexMob.html" style="font-size:30px;color:#fff;">Load Basic Version</a></div>
+
+    <div id="costumModal5" class="modal" data-easein="flipBounceYIn"  tabindex="-1" role="dialog" aria-labelledby="costumModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                    <h4 class="modal-title">
+                        Modal Header
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default btn-default" data-dismiss="modal" aria-hidden="true">
+                        Close
+                    </button>
+                    <button class="btn btn-primary">
+                        Save changes
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
   <!-- <div style="background:#000;margin-top:0px;"><p style="color:#fff">Hey</p></div> -->
   <div class="title-home">
     <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
@@ -121,7 +158,7 @@ box-sizing: border-box;
                         <a class="page-scroll" href="">HOME</a>
                     </li>
                     <li class="">
-                      <a class="page-scroll" href="./events.html">EVENTS</a>
+                      <a href="#costumModal5" role="button" class="btn" data-toggle="modal">EVENTS</a>
                     </li>
                     <li class="">
                       <a class="page-scroll" href="./schedule.html">SCHEDULE</a>
@@ -213,6 +250,11 @@ box-sizing: border-box;
     render()
   </script>
 
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js'></script>
 
+  <script src="./javascript/modalScript.js"></script>
 </body>
 </html>
