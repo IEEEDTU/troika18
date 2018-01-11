@@ -1,7 +1,11 @@
 <!doctype html>
 <html>
 <head>
-
+    <!-- <script type="text/javascript">
+      if (screen.width <= 699) {
+      document.location = "indexMob.html";
+      }
+      </script> -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89509670-2"></script>
 <script>
@@ -17,6 +21,7 @@
   console.log("%c>> Developer", "background: white; color: black; font-size: small");
   console.log("%c-->> SAGNIK BHOWMICK", "background: white; color: black; font-size: small");
   console.log("%c-->> NIKHIL KUMAR MISHRA", "background: white; color: black; font-size: small");
+  console.log("%c-->> UTKARSH VERMA", "background: white; color: black; font-size: small");
 </script>
 
   <meta charset="utf-8">
@@ -31,6 +36,9 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./css/modalStyle.css">
 
   <noscript>
     <style> svg{ display: none; } </style>
@@ -298,7 +306,6 @@ text{
   </svg>
 
   </div>
-     
   <!-- <div style="background:#000;margin-top:0px;"><p style="color:#fff">Hey</p></div> -->
   <div class="title-home">
     <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
@@ -327,19 +334,25 @@ text{
                         <a href="#page-top"></a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="">HOME</a>
+                        <a class="page-scroll" href="./indexMob.html">Lite Version</a>
                     </li>
                     <li class="">
-                      <a class="page-scroll" href="./events.html">EVENTS</a>
+                      <a class="page-scroll" href="./about.html">ABOUT US</a>
+                    </li>
+                    <li class="">
+                      <a class="page-scroll" href="./team.html">TEAM</a>
+                    </li>
+                    <li class="">
+                      <a href="#costumModal5" role="button" class="btn" data-toggle="modal">EVENTS</a>
                     </li>
                     <li class="">
                       <a class="page-scroll" href="./schedule.html">SCHEDULE</a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="./schedule.html#mu-sponsors">SPONSORS</a>
+                        <a class="page-scroll" href="./sponsors.html">SPONSORS</a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="#contact">CONTACT US</a>
+                        <a class="page-scroll" href="./contact.html">CONTACT US</a>
                     </li>
                     <li class="">
                         <a class="page-scroll" href="./coming.html">REGISTER</a>
@@ -353,27 +366,20 @@ text{
 
   <a-scene>
     <a-assets timeout="25000">
-      <a-asset-item id="earth-obj" src="./assets/earth-obj/earth.obj"></a-asset-item>
-      <a-asset-item id="earth-mtl" src="./assets/earth-obj/earth.mtl"></a-asset-item>
+      <a-asset-item id="earth" src="./assets/earth-obj/earth.gltf"></a-asset-item>
       <a-asset-item id="moon-obj" src="./assets/Moon_3D_Model/moon.obj"></a-asset-item>
       <a-asset-item id="moon-mtl" src="./assets/Moon_3D_Model/moon.mtl"></a-asset-item>
-      <a-asset-item id="sat-obj" src="./assets/nasa-aqua-satellite-obj/nasa-aqua-satellite.obj"></a-asset-item>
-      <a-asset-item id="sat-mtl" src="./assets/nasa-aqua-satellite-obj/nasa-aqua-satellite.mtl"></a-asset-item>
-      <a-asset-item id="mars-obj" src="./assets/mars-obj/mars.obj"></a-asset-item>
-      <a-asset-item id="mars-mtl" src="./assets/mars-obj/mars.mtl"></a-asset-item>
-      <a-asset-item id="oat-obj" src="./assets/dtu-oat/final.obj"></a-asset-item>
-      <a-asset-item id="oat-mtl" src="./assets/dtu-oat/final1111.mtl"></a-asset-item>
-      <a-asset-item id="sun-obj" src="./assets/sun-obj/sun.obj"></a-asset-item>
-      <a-asset-item id="sun-mtl" src="./assets/sun-obj/sun.mtl"></a-asset-item>
-      <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-
+      <a-asset-item id="sat" src="./assets/nasa-aqua-satellite-obj/nasa-aqua-satellite.gltf"></a-asset-item>
+      <a-asset-item id="mars" src="./assets/mars-obj/mars.gltf"></a-asset-item>
+      <a-asset-item id="oat" src="./assets/dtu-oat/final.gltf"></a-asset-item>
+      <a-asset-item id="sun" src="./assets/sun-obj/sun.gltf"></a-asset-item>
     </a-assets>
 
     <a-sky src="./assets/space.jpg">
     </a-sky>
 
     <a-entity light="type: ambient; color: #FFFFFF"></a-entity>
-    <a-entity obj-model="obj: #earth-obj; mtl: #earth-mtl" position="8 1.5 -4" scale="1.5 1.5 1.5">
+    <a-entity gltf-model="#earth" position="8 1.5 -4" scale="1.5 1.5 1.5">
       <a-animation attribute="rotation"
              dur="10000"
              to="0 360 0"
@@ -381,29 +387,30 @@ text{
     </a-entity>
     <a-entity id="moon" obj-model="obj: #moon-obj; mtl: #moon-mtl" scale="0.003 0.003 0.003">
     </a-entity>
-    <a-entity id="satellite" obj-model="obj: #sat-obj; mtl: #sat-mtl" scale="0.08 0.08 0.08">
+    <a-entity id="satellite" gltf-model="#sat" scale="0.08 0.08 0.08">
       <a-animation attribute="rotation"
              dur="50000"
              to="0 360 0"
              repeat="indefinite"></a-animation>
     </a-entity>
-    <a-entity id="mars" obj-model="obj: #mars-obj; mtl: #mars-mtl" position="-13 1.5 -13" scale="1.6 1.6 1.6">
+    <a-entity id="mars" gltf-model="#mars" position="-13 1.5 -13" scale="1.6 1.6 1.6">
       <a-animation attribute="rotation"
              dur="10000"
              to="0 360 0"
              repeat="indefinite"></a-animation>
     </a-entity>
-    <a-entity id="oatdtu" obj-model="obj: #oat-obj; mtl: #oat-mtl" position="-1 0.75 -6" scale="0.008 0.008 0.008" rotation="270 0 270">
+    <a-entity id="oatdtu" gltf-model="#oat" position="-1 0.75 -6" scale="0.008 0.008 0.008" rotation="270 0 270">
     </a-entity>
 
-    <a-entity id="sun" obj-model="obj: #sun-obj; mtl: #sun-mtl" position="150 1.35 -3" scale="0.15 0.15 0.15">
+    <a-entity id="sun" gltf-model="#sun" position="150 1.35 -3" scale="0.15 0.15 0.15">
     </a-entity>
 
 
-    <a-entity camera look-controls position="0 2 0" id="world">
+    <a-entity camera look-controls wasd-controls position="0 2 0" id="world">
     </a-entity>
 
   </a-scene>
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
       document.querySelector('a-assets').addEventListener( 'loaded', () => {
@@ -542,15 +549,52 @@ text{
   <script>
     var t = 0;
     function render() {
-      t += 0.01;
+      t += 0.002;
       requestAnimationFrame(render);
       satellite.setAttribute('position', (5*Math.sin(t)+8)+ ' 1.5 ' +(5*Math.cos(t)-4));
       moon.setAttribute('position', (15*Math.cos(t)+8)+ ' 1.5 ' +(11*Math.sin(t)-4));
-      world.setAttribute('position', (3*Math.cos(t)+1)+ ' 2 ' +(3*Math.sin(t)-4));
+      // world.setAttribute('position', (3*Math.cos(t)+1)+ ' 2 ' +(3*Math.sin(t)-4));
           }
     render()
   </script>
+  <div id="costumModal5" class="modal" data-easein="flipBounceYIn"  tabindex="-1" role="dialog" aria-labelledby="costumModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                      ×
+                  </button>
+                  <h4 class="modal-title">
+                      Modal Header
+                  </h4>
+              </div>
+              <div class="modal-body">
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+              </div>
+              <div class="modal-footer">
+                  <button class="btn btn-default btn-default" data-dismiss="modal" aria-hidden="true">
+                      Close
+                  </button>
+                  <button class="btn btn-primary">
+                      Save changes
+                  </button>
+              </div>
+          </div>
+      </div>
+  </div>
 
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js'></script>
 
+  <script src="./javaScript/modalScript.js"></script>
 </body>
 </html>
