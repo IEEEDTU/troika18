@@ -16,6 +16,8 @@
   opacity: 0.9;
 }
 .modal-header{
+    background-color: #424242 !important;
+
   border-bottom: 0;
   padding-top: 15px;
   padding-right: 26px;
@@ -23,10 +25,12 @@
   padding-bottom: 0px;
 }
 .modal-title {
+  color: cyan;
   text-align: center;
   font-size: 34px;
 }
 .modal-body{
+    background-color: #424242 !important;
   border-bottom: 0;
   padding-top: 5px;
   padding-right: 26px;
