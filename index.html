@@ -387,11 +387,7 @@ text{
     </a-entity>
     <a-entity id="moon" obj-model="obj: #moon-obj; mtl: #moon-mtl" scale="0.003 0.003 0.003">
     </a-entity>
-    <a-entity id="satellite" gltf-model="#sat" scale="0.08 0.08 0.08">
-      <a-animation attribute="rotation"
-             dur="50000"
-             to="0 360 0"
-             repeat="indefinite"></a-animation>
+    <a-entity id="satellite" gltf-model="#sat" scale="0.08 0.08 0.08" position="11 1.5 1" rotation="0 -30 0">
     </a-entity>
     <a-entity id="mars" gltf-model="#mars" position="-13 1.5 -13" scale="1.6 1.6 1.6">
       <a-animation attribute="rotation"
@@ -551,7 +547,7 @@ text{
     function render() {
       t += 0.002;
       requestAnimationFrame(render);
-      satellite.setAttribute('position', (5*Math.sin(t)+8)+ ' 1.5 ' +(5*Math.cos(t)-4));
+      // satellite.setAttribute('position', (5*Math.sin(t)+8)+ ' 1.5 ' +(5*Math.cos(t)-4));
       moon.setAttribute('position', (15*Math.cos(t)+8)+ ' 1.5 ' +(11*Math.sin(t)-4));
       // world.setAttribute('position', (3*Math.cos(t)+1)+ ' 2 ' +(3*Math.sin(t)-4));
           }
