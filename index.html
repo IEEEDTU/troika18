@@ -259,10 +259,6 @@ text{
 
   </div>
 
-  <audio src="background.mp3">
-    Your browser does not support the <code>audio</code> tag
-	</audio>
-
   <!-- <div style="background:#000;margin-top:0px;"><p style="color:#fff">Hey</p></div> -->
   <div class="title-home">
     <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
@@ -357,7 +353,7 @@ text{
 
     <a-entity id="sun" gltf-model="#sun" position="150 1.35 -3" scale="0.15 0.15 0.15">
     </a-entity>
-
+    <a-sound src="src: url(background.mp3)" autoplay="true" loop="true" position="-1 0.75 -6"></a-sound>
 
     <a-entity camera look-controls wasd-controls position="0 2 0" id="world">
     </a-entity>
@@ -509,6 +505,11 @@ text{
       moon.setAttribute('position', (15*Math.cos(t)+8)+ ' 1.5 ' +(11*Math.sin(t)-4));
       world.setAttribute('position', (3*Math.cos(t)+1)+ ' 2 ' +(3*Math.sin(t)-4));
           }
+    // function myFunction() {
+    // 	setTimeout(function(){
+    // 	document.querySelector("audio").play();
+    // 			}
+    // myFunction()
     render()
   </script>
   <div id="costumModal5" class="modal"  data-easein="flipBounceYIn"  tabindex="-1" role="dialog" aria-labelledby="costumModalLabel" aria-hidden="true">
@@ -607,12 +608,6 @@ text{
   </div>
 
 
-  <script type="text/javascript">
-			function myFunction() {
-				setTimeout(function(){
-					document.querySelector("audio").play();
-			}
-		</script>
 
   // <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
