@@ -330,11 +330,11 @@ text{
 
     <a-sky src="./assets/space.jpg">
     </a-sky>
-
+    <a-sound src="src: url(backgroundfinal.mp3)" autoplay="true" loop="true" position="-1 0.75 -6"></a-sound>
     <a-entity light="type: ambient; color: #FFFFFF"></a-entity>
     <a-entity gltf-model="#earth" position="8 1.5 -4" scale="1.5 1.5 1.5">
       <a-animation attribute="rotation"
-             dur="10000"
+             dur="30000"
              to="0 360 0"
              repeat="indefinite"></a-animation>
     </a-entity>
@@ -348,12 +348,12 @@ text{
              to="0 360 0"
              repeat="indefinite"></a-animation>
     </a-entity>
-    <a-entity id="oatdtu" gltf-model="#oat" position="-1 0.75 -6" scale="0.008 0.008 0.008" rotation="270 0 270">
+    <a-entity id="oatdtu" gltf-model="#oat" position="-1 0.75 -4" scale="0.008 0.008 0.008" rotation="270 0 270">
     </a-entity>
 
     <a-entity id="sun" gltf-model="#sun" position="150 1.35 -3" scale="0.15 0.15 0.15">
     </a-entity>
-    <a-sound src="src: url(background.mp3)" autoplay="true" loop="true" position="-1 0.75 -6"></a-sound>
+
     <a-entity camera look-controls wasd-controls position="0 2 0" id="world">
     </a-entity>
 
@@ -501,7 +501,7 @@ text{
       t += 0.002;
       requestAnimationFrame(render);
       moon.setAttribute('position', (15*Math.cos(t)+8)+ ' 1.5 ' +(11*Math.sin(t)-4));
-      world.setAttribute('position', (3*Math.cos(t)+1)+ ' 2 ' +(3*Math.sin(t)-4));
+      world.setAttribute('position', (3.25*Math.cos(t)+1)+ ' 2 ' +(3.25*Math.sin(t)));
           }
     render()
   </script>
@@ -587,7 +587,7 @@ text{
 
 
       </div>
-      </div> 
+      </div>
       <p id ="blabla" style="color:white;">Contact Us @</p> <a href="https://twitter.com/dtu_ieee" target="_blank">Twitter </a>
           <a href="https://www.facebook.com/TroikaIeeeDTU/" target="_blank">| Facebook </a>
           <a href="https://www.youtube.com/user/ieeedtu" target="_blank">| Youtube </a>
