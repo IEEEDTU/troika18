@@ -301,6 +301,7 @@ text{
                         <a class="page-scroll" href="./indexMob.html">Lite Version</a>
                     </li>
                     <li class="">
+                      <a href="#costumModal5" role="button" class="btn" data-toggle="modal">ABOUT US</a>
                       <a class="page-scroll" href="#costumModal5" role="button" data-toggle="modal">ABOUT US</a>
                     </li>
                     <li class="">
@@ -316,7 +317,7 @@ text{
                         <a class="page-scroll" href="./sponsors.html">SPONSORS</a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="./contact.html">CONTACT US</a>
+                        <a href="#costumModal7" role="button" class="btn" data-toggle="modal">CONTACT US</a>
                     </li>
                     <li class="">
                         <a class="page-scroll" href="./coming.html">REGISTER</a>
@@ -377,6 +378,7 @@ text{
         console.log( 'a-assets loaded' );
         jQuery(".loader").fadeOut(500)});
   </script>
+
   <script>
     //var container = document.querySelector('.container');
     var jetBubbles = document.getElementsByClassName('jetBubble');
@@ -513,7 +515,7 @@ text{
       requestAnimationFrame(render);
       // satellite.setAttribute('position', (5*Math.sin(t)+8)+ ' 1.5 ' +(5*Math.cos(t)-4));
       moon.setAttribute('position', (15*Math.cos(t)+8)+ ' 1.5 ' +(11*Math.sin(t)-4));
-      world.setAttribute('position', (3*Math.cos(t)+1)+ ' 2 ' +(3*Math.sin(t)-4));
+      // world.setAttribute('position', (3*Math.cos(t)+1)+ ' 2 ' +(3*Math.sin(t)-4));
           }
     render()
   </script>
@@ -558,6 +560,63 @@ text{
           </div>
       </div>
   </div>
+ <div id="costumModal7" class="modal"  data-easein="flipBounceYIn"  tabindex="-1" role="dialog" aria-labelledby="costumModalLabel" aria-hidden="true">
+      <div class="modal-dialog" style="width: 80%; opacity: 0.5;" >
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                      ×
+                  </button>
+                  <h4 class="modal-title">
+                      Contact Us
+                  </h4>
+              </div>
+              <div class="modal-body">
+<div class="about" id="about">
+      <div class="background-image-about"></div>
+      <div class="content">
+          <div class="contact" id="contact">
+      <div class="background-image-contact"></div>
+      <div class="content">
+        <h1 class="about-us" style="padding-top:50px">Contact</h1><br><br>
+
+        <div class="container">
+          <div class="row">
+
+            <div id="ops" class="col-lg-6 col-md-6 col-sm-6 col-md-12">
+              <h2 class="contact-us">Mail Us:</h2>
+              <h3 class="contact-us-sub"><a href="mailto:contact@ieeedtu.com" style="color:skyblue"> contact@ieeedtu.com </a></h3>
+            </div>
+            <div id="opss" class="col-lg-6 col-md-6 col-sm-6 col-md-12" >
+              <h2 class="contact-us">Reach Us at:</h2>
+              <address class="contact-us-sub">Delhi Technological University,<br>
+                Shahbad Daulatpur,<br>
+                Main Bawana Road,<br>
+                Delhi, 110042</address>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-md-12" class="g-maps" id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6995.957599070029!2d77.11125079870604!3d28.750049929140047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01212a67c965%3A0x87d470ca1c30d1b0!2sDelhi+Technological+University!5e0!3m2!1sen!2sin!4v1513710372791" width="100%" height="440px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        
+      </div>
+      </div> <p id ="blabla">Contact Us @</p> <a href="https://twitter.com/dtu_ieee" target="_blank">Twitter </a>
+          <a href="https://www.facebook.com/TroikaIeeeDTU/" target="_blank">| Facebook </a>
+          <a href="https://www.youtube.com/user/ieeedtu" target="_blank">| Youtube </a>
+          <a href="https://www.linkedin.com/company/7604169/" target="_blank">| LinkedIn </a>
+          <a href="https://www.instagram.com/ieee.dtu/" target="_blank">| Instagram </a>
+      
+      
+              </div>
+                  </div>
+         </div>
+  </div>
+
 
   <script type="text/javascript">
 			function myFunction() {
