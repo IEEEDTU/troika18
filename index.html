@@ -322,6 +322,8 @@ text{
       <a-asset-item id="earth" src="./assets/earth-obj/earth.gltf"></a-asset-item>
       <a-asset-item id="moon-obj" src="./assets/Moon_3D_Model/moon.obj"></a-asset-item>
       <a-asset-item id="moon-mtl" src="./assets/Moon_3D_Model/moon.mtl"></a-asset-item>
+      <a-asset-item id="ship-obj" src="./assets/ship/rocket1.obj"></a-asset-item>
+      <a-asset-item id="ship-mtl" src="./assets/ship/rocket1.mtl"></a-asset-item>
       <a-asset-item id="sat" src="./assets/nasa-aqua-satellite-obj/nasa-aqua-satellite.gltf"></a-asset-item>
       <a-asset-item id="mars" src="./assets/mars-obj/mars.gltf"></a-asset-item>
       <a-asset-item id="oat" src="./assets/dtu-oat/final.gltf"></a-asset-item>
@@ -340,6 +342,14 @@ text{
     </a-entity>
     <a-entity id="moon" obj-model="obj: #moon-obj; mtl: #moon-mtl" scale="0.003 0.003 0.003">
     </a-entity>
+    <a-entity id="ship" obj-model="obj: #ship-obj; mtl: #ship-mtl" scale="0.025 0.025 0.025" rotation="-90 0 0">
+      <a-animation attribute="position"
+             dur="5000"
+             from="6.06 2.2 1.5"
+             to="6.06 2.2 -3.5"
+             direction='alternate-reverse'
+             repeat="indefinite"></a-animation>
+    </a-entity>
     <a-entity id="satellite" gltf-model="#sat" scale="0.08 0.08 0.08" position="11 1.5 1" rotation="0 -30 0">
     </a-entity>
     <a-entity id="mars" gltf-model="#mars" position="-13 1.5 -13" scale="1.6 1.6 1.6">
@@ -354,7 +364,7 @@ text{
     <a-entity id="sun" gltf-model="#sun" position="150 1.35 -3" scale="0.15 0.15 0.15">
     </a-entity>
 
-    <a-entity camera look-controls wasd-controls position="0 2 0" id="world">
+    <a-entity camera look-controls wasd-controls position="-2 0 0" rotation="0 -100 0" id="world">
     </a-entity>
 
   </a-scene>
@@ -501,7 +511,8 @@ text{
       t += 0.002;
       requestAnimationFrame(render);
       moon.setAttribute('position', (15*Math.cos(t)+8)+ ' 1.5 ' +(11*Math.sin(t)-4));
-      world.setAttribute('position', (3.25*Math.cos(t)+1)+ ' 2 ' +(3.25*Math.sin(t)));
+      // ship.setAttribute('position',  '6.06 2.2' +(Math.sin(t)-1.72));
+      world.setAttribute('position', (3.25*Math.cos(t-3.5)+1)+ ' 2 ' +(3.25*Math.sin(t-3.5)));
           }
     render()
   </script>
