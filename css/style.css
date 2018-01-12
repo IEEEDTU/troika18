@@ -554,11 +554,11 @@ div {
  }
 
  #uff{
-       
+
        position: absolute;
     left: -10%;
     top:-20;
-   
+
     height: auto;
     width: auto;
     margin-top: 200px;
@@ -575,5 +575,5 @@ div {
  }
 
  #uff:hover {
-    transform: scale(1.25); 
+    transform: scale(1.25);
 }
