@@ -7,23 +7,7 @@ html {
 
 body {
     font-family: "Lato",sans-serif;
-    background-color: rgb(0, 0, 0);
-    margin:0;
-    padding: 0;
-    
-}
-
-#particles-js{
-    height: 100%;
-    width: 100%
-}
-
-h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+    background-color: rgb(14, 13, 13);
 }
 
 a,
@@ -108,7 +92,9 @@ a.active {
     color: black;
     background-color: #c5c6c7;
 }
-
+.card{
+    width:90%;
+}
 @media only screen and (max-width: 768px) {
 
     .navbar-default {
@@ -500,7 +486,7 @@ div {
     }
   }
 #map {
-   width: 100%;
+   width: 70%;
    /* height: 440px; */
    background-color: transparent;
    border : solid 5px skyblue;
@@ -510,6 +496,15 @@ div {
    padding-bottom: 0px;
    padding-right: 0px;
    padding-left: 0px;
+ }
+
+
+ #ops{
+    margin-right: 20px;
+ }
+
+ #opss{
+    margin-right: 20px;
  }
 
 .contact-us {
@@ -551,3 +546,34 @@ div {
         font-size: 34px;
     }
  }
+
+ #blabla{
+    margin-top: 10px;
+    font-color:#000000;
+    font-weight: 200;
+ }
+
+ #uff{
+       
+       position: absolute;
+    left: 30%;
+    top: 30%;
+
+    height: 320px;
+    width: 512px;
+     /*display: block;
+     /*margin-top: auto;
+  /* margin-left: auto;
+   margin-right: auto;
+    max-height: 100%;
+    max-width: 100%;*/
+    /*align-self: center;*/
+    transition: transform .2s;
+
+
+
+ }
+
+ #uff:hover {
+    transform: scale(1.20); 
+}
