@@ -5,14 +5,125 @@ body {
     overflow-x: hidden;
 }
 h1{
-  color: #fff;
+  color: #66FCF1;
 	text-align: center;
-	font-family: 'Josefin Sans',sans-serif;
+  font-family: 'Josefin Sans',sans-serif;
+  margin-top: 60px;
 	margin-bottom: 0;
 	font-size:63px;
+  padding-top: 20px;
+}
+h3{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.anchor{
+  color: #66FCF1;
+}
+
+.row.title{
+  font-weight: bold;
+  margin-bottom:30px;
 }
 
 button:focus {outline:0;}
+
+/*--------------------*/
+/* MENU */
+/*--------------------*/
+
+#mu-hero .navbar-default {
+	background-color: #fff;
+	border-color: #e7e7e7;
+	padding: 5px 0;
+}
+
+.mu-navbar {
+	top: -150px;
+	transition: all 0.5s;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mu-nav-show {
+	top: 0px;
+}
+
+#mu-hero .navbar-default .navbar-brand {
+	font-size: 28px;
+	line-height: 20px;
+}
+
+.mu-navbar .mu-menu li a{
+	color: #C5C6C7 ;
+	padding: 20px 15px;
+}
+
+
+.mu-navbar .mu-menu li a, .mu-navbar .mu-menu li a:before, .mu-navbar .mu-menu li a:after{
+	webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover {
+	color: #fff;
+}
+
+.mu-navbar .mu-menu li a:hover {
+	color: white !important;
+}
+
+.mu-navbar .mu-menu li a:before{
+  position: absolute; 
+  left: 0;
+  right: 0;
+  top:10px;
+  margin: auto;
+  width: 0%;
+  content: '';
+  background: #66FCF1;
+  height: 2px;
+  color:transparent;
+}
+
+.mu-navbar .mu-menu li a:after{
+  position: absolute; 
+  bottom:8px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '';
+  background: #66FCF1;
+  height: 2px;
+  color:transparent;
+}
+.mu-navbar .mu-menu li a:hover:after,.mu-navbar .mu-menu li a:hover:before {
+  width: 70%;
+}
+
+.navbar-nav > .active >a{
+	background: #C5C6C7 !important;
+	color: #0B0C10 !important;
+	webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.navbar-nav > .active >a:hover{
+	color: #C5C6C7 !important;
+	background : #0B0C10 !important;
+	webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+
 
 
 .footerimg {
@@ -20,14 +131,14 @@ button:focus {outline:0;}
 	margin: 0 1%;
 }
 .footer {
-	
+
 	right: 0;
   bottom: 0;
   left: 0;
 	text-align: center;
 	width: 100%;
 	z-index: 100;
-	
+
 }
 
 @media (max-width:767px) {
@@ -35,7 +146,7 @@ button:focus {outline:0;}
 		width: 10%;
 		margin: 0 5%;
 	}
-    
+
     .footer {
         width: 100%;
     }
@@ -70,11 +181,11 @@ button:focus {outline:0;}
       transition: all 0.3s;
 }
 hr{
-	margin-top: 00px;
-	border: 1.5px solid #dafcff;
-    width: 20%!important;
+	margin-top: 20px;
+	border: 1.0px solid #dafcff;
+    width: 100%!important;
     text-align: center;
-    
+
 }
 
 .eventcontainer{
@@ -82,7 +193,7 @@ hr{
   margin: auto;
 	text-align:center;
   margin-bottom: 5%;
-
+  font-family:Lato, sans-serif;
 }
 
 .title {
@@ -106,11 +217,12 @@ hr{
 }
 
 .button:hover {
-  background-color: #555;
+  /*background-color: #555;*/
+  background-color:#1F2833; 
   text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
 
-    
-    
+
+
 }
 
 .button:active,
@@ -120,7 +232,7 @@ hr{
 }
 
 .button.is-checked {
-  color: grey;
+  color: #0B0C10;
   text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
 }
 
@@ -159,7 +271,7 @@ hr{
 }
 
 .events {
-    
+
 	max-width: 320px;
 	max-height: 320px;
   margin-bottom:1%;
@@ -254,6 +366,7 @@ hr{
 figure.effect-bubba {
     position: relative;
 	background: #000000;
+  border-radius: 25px;
 }
 
 figure.effect-bubba h6{
@@ -283,6 +396,8 @@ figure.effect-bubba img {
     -o-transition: all 0.3s;
     transition: all 0.3s;
     text-align: center;
+    border-radius: 25px;
+
 }
 
 figure.effect-bubba:hover img {
@@ -312,6 +427,7 @@ figure.effect-bubba figcaption::after {
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
+  border-radius: 25px;
 }
 
 figure.effect-bubba figcaption::before {
@@ -349,6 +465,7 @@ figure.effect-bubba p {
 	-webkit-transform: translate3d(0,20px,0);
 	transform: translate3d(0,20px,0);
 }
+
 
 figure.effect-bubba:hover figcaption::before,
 figure.effect-bubba:hover figcaption::after {
@@ -436,6 +553,11 @@ figure.effect-bubba:hover p {
 	text-transform: uppercase;
 	font-size: 15px;
 }
+
+.cat:hover{
+  color: #66FCF1;
+}
+
 @media only screen and (max-width: 365px){
     .eventcontainer{
         margin-left: 2.2em;

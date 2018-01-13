@@ -1,9 +1,34 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <title>Troika'18</title>
+    <!-- <script type="text/javascript">
+      if (screen.width <= 699) {
+      document.location = "indexMob.html";
+      }
+      </script> -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89509670-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-89509670-2');
+</script>
+
+<script type="text/javascript">
+  console.log("%cTroika'18", "background: white; color: black; font-size: x-large");
+  console.log("  -Developed using A-frame.");
+  console.log("%c>> Developer", "background: white; color: black; font-size: small");
+  console.log("%c-->> SAGNIK BHOWMICK", "background: white; color: black; font-size: small");
+  console.log("%c-->> NIKHIL KUMAR MISHRA", "background: white; color: black; font-size: small");
+  console.log("%c-->> UTKARSH VERMA", "background: white; color: black; font-size: small");
+</script>
+
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Troika 2018 | Techfest, DTU</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+  <meta name="description" content="">
+  <meta name="keywords" content="Troika, IEEE, IEEE DTU, DTU, Techfest, Troika'18, student, engineering, technical, branch, association">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
@@ -13,13 +38,239 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body  id="page-top" class="index" data-pinterest-extension-installed="cr1.3.4">
 
-    <!--Preloader-->
-    <div class="se-pre-con container-fluid"></div>
-   
-    <!-- Navigation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./css/modalStyle.css">
+
+  <noscript>
+    <style> svg{ display: none; } </style>
+  </noscript>
+  <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/mayognaise/aframe-mouse-cursor-component/master/dist/aframe-mouse-cursor-component.min.js"></script>
+  <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+  <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
+  <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+  <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+  <link rel="tracker" sizes="1x1" href="https://static1.squarespace.com/static/585a4892bebafba69928fcd7/58d854001e5b6cc3c401841b/58d854938419c267b73956cb/1490572452018/b.gif">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+  <!-- <script type="text/javascript" src="//s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.js?r=12"></script> -->
+  <style>
+svg{
+  background-color:#117dd6;
+  overflow:hidden;
+  width:100%;
+  height:100%;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;padding: 0;
+}
+
+text{
+  fill:red;
+}
+</style>
+</head>
+
+<body>
+  <!--Preloader-->
+  <div class="loader" style="height:100%; width:100%;">
+      <svg version="1.1" class="rocketManSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"viewBox="0 0 600 600" >
+
+                  <defs>
+                    <path id="rocketClip" d="M300,465.7L300,465.7c-13.8,0-25-11.3-25-25V249.4c0-13.7,11.3-25,25-25h0c13.7,0,25,11.2,25,25v191.3
+                    C325,454.5,313.8,465.7,300,465.7z" />
+                    <clipPath id="rainbowClip">
+                      <use xlink:href="#rocketClip" overflow="visible" />
+                    </clipPath>
+                    <symbol id="badge">
+
+                      <circle fill="#1668B2" stroke="#EF3D43" stroke-width="1.4389" stroke-miterlimit="10" cx="319.6" cy="288.9" r="8.7" />
+                      <g>
+                        <g>
+                          <path fill="#FFFFFF" d="M319.6,294.7L319.6,294.7c-1.7,0-2.8-0.9-2.6-1.9c0.5-2.6,0.9-5.2,1.4-7.8c0.2-1,0.4-2.8,1.2-2.8
+                        c0,0,0,0,0,0c0.8,0,1,1.8,1.2,2.8c0.5,2.6,0.9,5.2,1.4,7.8C322.5,293.8,321.3,294.6,319.6,294.7z" />
+                        </g>
+                        <path fill="#FFFFFF" d="M316.4,294.2L316.4,294.2c-0.4,0-0.8-0.3-0.8-0.8v-3.3c0-0.4,0.3-0.8,0.8-0.8l0,0c0.4,0,0.8,0.3,0.8,0.8
+                      v3.3C317.2,293.9,316.9,294.2,316.4,294.2z" />
+                        <path fill="#FFFFFF" d="M322.8,294.2L322.8,294.2c-0.4,0-0.7-0.3-0.7-0.7v-3.3c0-0.4,0.3-0.7,0.7-0.7l0,0c0.4,0,0.7,0.3,0.7,0.7
+                      v3.3C323.6,293.9,323.2,294.2,322.8,294.2z" />
+                      </g>
+
+                      <g>
+                        <circle fill="#FFFFFF" cx="314" cy="288.3" r="0.7" />
+                        <ellipse fill="#FFFFFF" cx="314" cy="288.3" rx="0.1" ry="1.2" />
+                        <ellipse fill="#FFFFFF" cx="314" cy="288.3" rx="1.3" ry="0.1" />
+                      </g>
+                      <g>
+                        <circle fill="#FFFFFF" cx="324.8" cy="286.4" r="0.7" />
+                        <ellipse fill="#FFFFFF" cx="324.8" cy="286.4" rx="0.1" ry="1.2" />
+                        <ellipse fill="#FFFFFF" cx="324.8" cy="286.4" rx="1.3" ry="0.1" />
+                      </g>
+
+                    </symbol>
+                  </defs>
+
+                  <polygon class="star" opacity="0.5" fill="#ECB447" points="1.2,0 1.6,0.8 2.4,0.9 1.8,1.5 1.9,2.3 1.2,1.9 0.5,2.3 0.6,1.5 0,0.9 0.8,0.8 " />
+                  <g class="starContainer"></g>
+                  <g class="satellite">
+                    <g class="satellitePulses" stroke="#2d2d2d">
+                      <path class="satellitePulse" fill="none" stroke-width="1.5814" stroke-linejoin="round" stroke-miterlimit="10" d="M156.3,131.8
+                  c-2.8,2.8-7.2,2.8-10,0" />
+                      <path class="satellitePulse" fill="none" stroke-width="1.5814" stroke-linejoin="round" stroke-miterlimit="10" d="M158.6,134
+                  c-4,4-10.5,4-14.4,0" />
+                      <path class="satellitePulse" fill="none" stroke-width="1.5814" stroke-linejoin="round" stroke-miterlimit="10" d="M160.8,136.3
+                  c-5.2,5.2-13.7,5.2-18.9,0" />
+                    </g>
+                    <path fill="#2d2d2d" d="M106.7,91.3h-8.2v-8.2h8.2V91.3z M116.8,83.1h-8.2v8.2h8.2V83.1z M126.8,83.1h-8.2v8.2h8.2V83.1z
+                 M136.9,83.1h-8.2v8.2h8.2V83.1z M106.7,93.2h-8.2v8.2h8.2V93.2z M116.8,93.2h-8.2v8.2h8.2V93.2z M126.8,93.2h-8.2v8.2h8.2V93.2z
+                 M136.9,93.2h-8.2v8.2h8.2V93.2z M106.7,103.3h-8.2v8.2h8.2V103.3z M116.8,103.3h-8.2v8.2h8.2V103.3z M126.8,103.3h-8.2v8.2h8.2
+                V103.3z M136.9,103.3h-8.2v8.2h8.2V103.3z M173.7,83.1h-8.2v8.2h8.2V83.1z M183.8,83.1h-8.2v8.2h8.2V83.1z M193.8,83.1h-8.2v8.2h8.2
+                V83.1z M203.9,83.1h-8.2v8.2h8.2V83.1z M173.7,93.2h-8.2v8.2h8.2V93.2z M183.8,93.2h-8.2v8.2h8.2V93.2z M193.8,93.2h-8.2v8.2h8.2
+                V93.2z M203.9,93.2h-8.2v8.2h8.2V93.2z M173.7,103.3h-8.2v8.2h8.2V103.3z M183.8,103.3h-8.2v8.2h8.2V103.3z M193.8,103.3h-8.2v8.2
+                h8.2V103.3z M203.9,103.3h-8.2v8.2h8.2V103.3z M161.8,113.1V81c0-2.6-2.1-4.7-4.7-4.7h-11.7c-2.6,0-4.7,2.1-4.7,4.7v32.1
+                c0,2.6,2.1,4.7,4.7,4.7h11.7C159.7,117.8,161.8,115.7,161.8,113.1z M165.6,96.3h-28.7v2.1h28.7V96.3z M152.3,117.8h-2.2v12.1h2.2
+                V117.8z" />
+                  </g>
+
+
+                  <g class="speedLines" stroke="#3e3e3e" stroke-width="2" stroke-linejoin="round">
+                    <line id="speedLine0" fill="none" stroke-miterlimit="10" x1="252.5" y1="324" x2="252.5" y2="566" />
+                    <line id="speedLine1" fill="none" stroke-miterlimit="10" x1="299.5" y1="500" x2="299.5" y2="557" />
+                    <line id="speedLine2" fill="none" stroke-miterlimit="10" x1="347.5" y1="324" x2="347.5" y2="529" />
+                    <line id="speedLine3" fill="none" stroke-miterlimit="10" x1="74.5" y1="45" x2="74.5" y2="500" />
+                    <line id="speedLine4" fill="none" stroke-miterlimit="10" x1="544.5" y1="29" x2="544.5" y2="574" />
+                    <line id="speedLine5" fill="none" stroke-miterlimit="10" x1="415.5" y1="8" x2="415.5" y2="440" />
+                    <line id="speedLine6" fill="none" stroke-miterlimit="10" x1="165.5" y1="142" x2="165.5" y2="574" />
+                  </g>
+                  <rect x="275" y="263.3" clip-path="url(#rainbowClip)" fill="#CC583F" width="10" height="212.7" />
+                  <rect x="285" y="263.3" clip-path="url(#rainbowClip)" fill="#ECB447" width="10" height="212.7" />
+                  <rect x="295" y="263.3" clip-path="url(#rainbowClip)" fill="#75C095" width="10" height="212.7" />
+                  <rect x="305" y="263.3" clip-path="url(#rainbowClip)" fill="#5991AA" width="10" height="212.7" />
+                  <rect x="315" y="263.3" clip-path="url(#rainbowClip)" fill="#7D6AAD" width="10" height="212.7" />
+
+
+                  <g class="astronaut">
+
+                    <g class="pulseSVG" opacity="0.2" stroke="#ededed">
+                      <path class="pulse" fill="none" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="10" d="M289.9,188.7
+                      c5.2-5.2,13.7-5.2,18.9,0" />
+                      <path class="pulse" fill="none" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="10" d="M285.6,184.5
+                      c7.6-7.6,19.8-7.6,27.4,0" />
+                      <path class="pulse" fill="none" stroke-width="3" stroke-linejoin="round" stroke-miterlimit="10" d="M281.4,180.3
+                      c9.9-9.9,26-9.9,35.9,0" />
+                    </g>
+                    <g>
+                      <g>
+                        <g>
+                          <path fill="#CCCCCC" d="M265,320.7c0,0,0.1,0,0.1,0h0.2c0,0,0,0,0,0l0.2,0c0,0,0,0,0,0v-16.1h-21.4c0.9,3.7,2.8,6.9,5.6,9.8
+                        C254,318.6,259.1,320.7,265,320.7 M334.9,320.7c0,0,0.1,0,0.1,0c5.9,0,11-2.1,15.2-6.3c2.9-2.9,4.7-6.1,5.6-9.8h-21.4v16.1
+                        l0.2,0c0,0,0,0,0,0h0h0H334.9 M271.8,224.4c-4.3,0.9-8.1,2.9-11.4,6.2c-4.5,4.5-6.7,9.9-6.7,16.2v13.6c3.3-2.1,7.1-3.2,11.3-3.2
+                        h0c0.9,0,1.7,0,2.6,0.1c-1.5-3.9-2.3-8.2-2.3-12.7C265.3,237,267.5,230.3,271.8,224.4 M346.3,260.4v-13.6
+                        c0-6.3-2.2-11.7-6.7-16.2c-3-3-6.5-5.1-10.4-6l-0.2,0.8c3.9,5.6,5.8,12,5.8,19.2c0,4.2-0.7,8.1-2,11.8l0.1,0.8
+                        c0.7-0.1,1.4-0.1,2.2-0.1h0C339.2,257.2,342.9,258.3,346.3,260.4z" />
+                          <path fill="#FFFFFF" d="M299.9,210.1c0,0-0.1,0-0.1,0c-9.5,0-17.6,3.4-24.3,10.1c-1.3,1.3-2.5,2.7-3.6,4.2
+                        c-4.3,5.9-6.5,12.6-6.5,20.3c0,4.6,0.8,8.8,2.3,12.7c0.2,0.6,0.5,1.2,0.8,1.8c1.7,3.6,4,6.9,7.1,9.9c3.3,3.3,6.8,5.7,10.7,7.4
+                        c0.1,0,0.2,0.1,0.2,0.1c0.8,0.3,1.6,0.7,2.5,0.9c3.4,1.1,7.1,1.7,11,1.7c9.5,0,17.7-3.4,24.4-10.1c3.6-3.6,6.2-7.5,7.9-11.8
+                        c0.1-0.3,0.2-0.6,0.3-0.9c1.3-3.6,1.9-7.6,1.9-11.7c0-7.2-1.9-13.5-5.7-19.1l-0.2-0.2c0,0,0-0.1-0.1-0.1l0,0l-0.1-0.1l-0.1-0.1
+                        c0,0,0,0,0,0l-0.1-0.1c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1-0.1-0.1c-1.1-1.5-2.3-2.9-3.7-4.3C317.5,213.5,309.4,210.1,299.9,210.1
+                         M350.1,263.5c-1.2-1.2-2.5-2.3-3.9-3.1c-3.3-2.1-7.1-3.2-11.3-3.2h0c-0.7,0-1.5,0-2.2,0.1c-0.1,0-0.2,0-0.3,0c0,0-0.1,0-0.1,0
+                        l-0.3-0.1c-1.7,4.3-4.3,8.3-7.9,11.8c-6.7,6.7-14.9,10.1-24.4,10.1c-3.9,0-7.6-0.6-11-1.7c-0.8-0.3-1.7-0.6-2.5-0.9
+                        c-0.1,0-0.2-0.1-0.2-0.1c-3.9-1.7-7.5-4.2-10.7-7.4c-3-3-5.4-6.3-7.1-9.9c-0.3-0.6-0.5-1.2-0.8-1.8c-0.8-0.1-1.7-0.1-2.6-0.1h0
+                        c-4.2,0-8,1.1-11.3,3.2c-1.4,0.9-2.7,1.9-3.9,3.1c-4.2,4.2-6.3,9.2-6.3,15.2v20.6c0,1.9,0.2,3.7,0.6,5.4h21.4v-22.6v22.6v16.1
+                        V338c0.6,3.3,2.2,6.2,4.7,8.7c3.3,3.4,7.3,5,12,5c4.7,0,8.9-1.8,12.7-5.3c2.8-2.6,4.5-5.5,5-8.7v-15.9h-12.7H300h13h-13v15.9
+                        c0.5,3.2,2.2,6.1,5,8.7c3.8,3.5,8,5.3,12.7,5.3c4.7,0,8.7-1.7,12-5c2.5-2.5,4-5.4,4.7-8.7v-17.3v-16.1v-22.6v22.6h21.4
+                        c0.4-1.7,0.6-3.5,0.6-5.4v-20.6C356.4,272.8,354.3,267.7,350.1,263.5 M300,311.1v-30.1V311.1z" />
+                          <path fill="#2D2D2D" d="M299.7,195.5c-1.1,0-2,0.4-2.7,1.1c-0.7,0.7-1.1,1.6-1.1,2.7c0,1.1,0.4,2,1.1,2.7
+                        c0.7,0.7,1.6,1.1,2.7,1.1c1.1,0,2-0.4,2.7-1.1c0.7-0.7,1.1-1.6,1.1-2.7c0-1.1-0.4-2-1.1-2.7
+                        C301.7,195.8,300.8,195.5,299.7,195.5z" />
+                        </g>
+                      </g>
+                      <path fill="none" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M355.8,304.6
+                    c0.4-1.7,0.6-3.5,0.6-5.4v-20.6c0-5.9-2.1-11-6.3-15.2c-1.2-1.2-2.5-2.3-3.9-3.1c-3.3-2.1-7.1-3.2-11.3-3.2h0
+                    c-0.7,0-1.5,0-2.2,0.1c-0.1,0-0.2,0-0.3,0c0,0-0.1,0-0.1,0 M332.1,257.3c-1.7,4.3-4.3,8.3-7.9,11.8c-6.7,6.7-14.9,10.1-24.4,10.1
+                    c-3.9,0-7.6-0.6-11-1.7c-0.8-0.3-1.7-0.6-2.5-0.9c-0.1,0-0.2-0.1-0.2-0.1c-3.9-1.7-7.5-4.2-10.7-7.4c-3-3-5.4-6.3-7.1-9.9
+                    c-0.3-0.6-0.5-1.2-0.8-1.8c-0.8-0.1-1.7-0.1-2.6-0.1h0c-4.2,0-8,1.1-11.3,3.2c-1.4,0.9-2.7,1.9-3.9,3.1c-4.2,4.2-6.3,9.2-6.3,15.2
+                    v20.6c0,1.9,0.2,3.7,0.6,5.4h21.4v-22.6 M346.3,260.4v-13.6c0-6.3-2.2-11.7-6.7-16.2c-3-3-6.5-5.1-10.4-6 M328.9,225.4
+                    c3.9,5.6,5.8,12,5.8,19.2c0,4.2-0.7,8.1-2,11.8 M299.7,203.1c-1.1,0-2-0.4-2.7-1.1c-0.7-0.7-1.1-1.6-1.1-2.7c0-1.1,0.4-2,1.1-2.7
+                    c0.7-0.7,1.6-1.1,2.7-1.1c1.1,0,2,0.4,2.7,1.1c0.7,0.7,1.1,1.6,1.1,2.7c0,1.1-0.4,2-1.1,2.7C301.7,202.7,300.8,203.1,299.7,203.1
+                    v7.1c0,0,0.1,0,0.1,0c9.5,0,17.7,3.4,24.4,10.1c1.4,1.4,2.6,2.8,3.7,4.3c0,0,0,0.1,0.1,0.1c0,0.1,0.1,0.1,0.1,0.2l0.1,0.1
+                    c0,0,0,0,0,0c0,0,0.1,0.1,0.1,0.1c0,0,0,0,0,0c0,0,0,0,0,0l0.1,0.1l0,0c0,0,0,0,0.1,0.1l0.2,0.2c3.8,5.6,5.7,12,5.7,19.1
+                    c0,4.2-0.6,8.1-1.9,11.7c-0.1,0.3-0.2,0.6-0.3,0.9 M329.2,224.6L329.2,224.6C329.1,224.6,329.1,224.6,329.2,224.6
+                    C329.1,224.6,329.1,224.6,329.2,224.6c-0.3-0.1-0.6-0.1-0.8-0.2c0,0-0.1,0-0.2,0c0,0,0,0.1,0.1,0.1c0,0,0,0.1,0,0.1
+                    c0.1,0.1,0.2,0.3,0.3,0.4c0,0,0,0,0,0l0,0c0.1,0.1,0.2,0.3,0.3,0.4c0,0,0,0,0,0 M271.8,224.4c1.1-1.4,2.3-2.8,3.6-4.2
+                    c6.7-6.7,14.8-10.1,24.3-10.1 M253.7,260.4v-13.6c0-6.3,2.2-11.7,6.7-16.2c3.3-3.3,7.1-5.4,11.4-6.2c-4.3,5.9-6.5,12.6-6.5,20.3
+                    c0,4.6,0.8,8.8,2.3,12.7 M332.7,256.5C332.7,256.5,332.7,256.5,332.7,256.5L332.7,256.5c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1l-0.2,0.5
+                    c0,0.1-0.1,0.1-0.1,0.2 M334.7,320.7h0.2c0,0,0.1,0,0.1,0c5.9,0,11-2.1,15.2-6.3c2.9-2.9,4.7-6.1,5.6-9.8h-21.4v16.1l0.2,0
+                     M334.6,320.7L334.6,320.7 M287.3,321.8H300h13 M300,337.8c0.5,3.2,2.2,6.1,5,8.7c3.8,3.5,8,5.3,12.7,5.3c4.7,0,8.7-1.7,12-5
+                    c2.5-2.5,4-5.4,4.7-8.7v-17.3 M265.6,320.7V338c0.6,3.3,2.2,6.2,4.7,8.7c3.3,3.4,7.3,5,12,5c4.7,0,8.9-1.8,12.7-5.3
+                    c2.8-2.6,4.5-5.5,5-8.7v-15.9 M265.6,320.7C265.6,320.7,265.6,320.7,265.6,320.7l-0.3,0c0,0,0,0,0,0h-0.2c0,0-0.1,0-0.1,0
+                    c-5.9,0-11-2.1-15.2-6.3c-2.9-2.9-4.7-6.1-5.6-9.8 M265.6,304.6v16.1 M334.4,282.1v22.6 M300,311.1v-30.1" />
+                    </g>
+                    <g>
+                      <path fill="#7592A0" d="M324.5,261.6c6.8-4.3,10.2-9.5,10.2-15.5c0-5.1-2.4-9.6-7.2-13.4H272c-4.8,3.8-7.3,8.3-7.3,13.4
+                    c0,6.1,3.4,11.2,10.2,15.5c6.8,4.3,15.1,6.4,24.7,6.4C309.4,268,317.6,265.9,324.5,261.6z" />
+                    </g>
+                    <path fill="none" stroke="#2D2D2D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M334.7,246.1
+                  c0,6.1-3.4,11.2-10.2,15.5c-6.8,4.3-15.1,6.4-24.7,6.4c-9.7,0-17.9-2.1-24.7-6.4c-6.8-4.3-10.2-9.5-10.2-15.5
+                  c0-5.1,2.4-9.6,7.3-13.4h55.5C332.3,236.5,334.7,241,334.7,246.1z" />
+
+                    <path fill="none" stroke="#E6E6E6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="
+                  M323.5,240.6c2.4,3.5,2.4,7.8,0,12.7 M275.8,240.6c-2.4,3.5-2.4,7.8,0,12.7" />
+
+                    <g class="jetBubbles">
+                      <g id="greyJets" fill="#2d2d2d">
+
+                        <circle class="jetBubble" cx="289" cy="489" r="23" />
+                        <circle class="jetBubble" cx="270" cy="470" r="20" />
+                        <circle class="jetBubble" cx="319" cy="483" r="21" />
+                      </g>
+                      <g id="colorJets" stroke-width="0" stroke="#3d3d3d">
+                        <circle class="jetBubble" fill="#ECB447" cx="312" cy="449" r="8" />
+                        <circle class="jetBubble" fill="#7D6AAD" cx="320" cy="480" r="10" />
+                        <circle class="jetBubble" fill="#7D6AAD" cx="290" cy="460" r="10" />
+                        <circle class="jetBubble" fill="#ECB447" cx="329" cy="453" r="11" />
+                        <circle class="jetBubble" fill="#CC583F" cx="286" cy="463" r="7" />
+                        <circle class="jetBubble" fill="#ECB447" cx="289" cy="469" r="24" />
+                        <circle class="jetBubble" fill="#7D6AAD" cx="260" cy="450" r="20" />
+                        <circle class="jetBubble" fill="#5991AA" cx="319" cy="463" r="10" />
+                        <circle class="jetBubble" fill="#CC583F" cx="290" cy="463" r="18" />
+                        <circle class="jetBubble" fill="#75C095" cx="312" cy="443" r="21" />
+
+                        <circle class="jetBubble" fill="#5991AA" cx="275" cy="443.4" r="12" />
+                      </g>
+
+                      <use xlink:href="#badge" x="0" y="0" />
+                    </g>
+                  </g>
+                  <g transform="matrix(1.6,0,0,-1.25,0,990)" id="g10">
+                <g id="g12">
+                    <g clip-path="url(#clipPath16)" id="g14">
+                        <text id="text20" style="font-variant:normal;font-weight:normal;font-size:10.56000042px;font-family:'Courier 10 Pitch';-inkscape-font-specification:CourierNewPSMT;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" transform="matrix(1,0,0,-1,75.024,710.98)">
+                            <tspan id="tspan22" y="+370" x="0 6.336 12.71424 18.9552 25.291201 31.55328 37.889278 44.15136 50.487358 56.749439 63.085442 69.347519 75.683517 81.945602 88.281601 94.543678 100.87968 107.14176 113.47776 119.73984 126.07584 132.45409 138.69504 145.03104 151.29312 157.62912 163.8912 170.2272 176.48927 182.82529 189.08736 195.42336 201.68544 208.02144 214.28352 220.61952 226.88161 233.21761">Hold tight, Taking off for planet DTU !!!</tspan>
+                        </text>
+        </g>
+                </g>
+                  <g>
+                    <g>
+                      <g>
+                      </g>
+                      <use xlink:href="#badge" x="-20" y="293" opacity="0.1" />
+                    </g>
+                  </g>
+                </svg>
+
+  </div>
+
+  <!-- <div style="background:#000;margin-top:0px;"><p style="color:#fff">Hey</p></div> -->
+  <div class="title-home">
     <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -36,7 +287,7 @@
                 <a class="navbar-brand" href="http://dtu.ac.in/" title="Delhi Technological University" target="_blank">
                   <img src="./img/dtu_logo.png" alt="DTU" class="img-responsive">
                 </a>
-                <a class="navbar-brand page-scroll" href="index.html"><div style="font-family: Shadows Into Light; font-size: 40px; color: skyblue">TROIKA'18</div></a>
+                <a class="navbar-brand page-scroll" href="index.html"><div style="font-family: Shadows Into Light; font-size: 40px; color: white">TROIKA'18</div></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,135 +297,342 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="#page-top">HOME</a>
+                        <a class="page-scroll" href="./indexMob.html">Lite Version</a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="#about">ABOUT</a>
+                      <a class="page-scroll" href="#costumModal5" role="button" data-toggle="modal">ABOUT US</a>
                     </li>
                     <li class="">
-                      <a class="page-scroll" href="#event">EVENTS</a>
+                      <a class="page-scroll" href="./team.html">TEAM</a>
                     </li>
                     <li class="">
-                      <a class="page-scroll" href="#schedule">SCHEDULE</a>
+                      <a class="page-scroll" href="./events.html">EVENTS</a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="#sponsors">SPONSORS</a>
+                      <a class="page-scroll" href="./schedule.html">SCHEDULE</a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="#contact">CONTACT US</a>
+                        <a class="page-scroll" href="./sponsors.html">SPONSORS</a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="#register">REGISTER</a>
+                        <a class="page-scroll" href="#costumModal7" role="button"  data-toggle="modal">CONTACT US</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="https://ieeedtu1.typeform.com/to/EBwQQ5">REGISTER</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+  </nav>
 
-    <div class="first" style="width:100%; height: 98vh;">
-      <div class="background-image-main"></div>
-      <div class="content">
-        <div class="main-heading">
-          <div class="main">
-            <h2 class="first-line">Be a part of</h2>
-            <h2 class="second-line">Biggest technical fest of the <a style="text-decoration: none;" href="http://dtu.ac.in/" title="Delhi Technological University" target="_blank">Delhi Technological University</a></h2>
-          </div>
-          
-        </div>
-        <div class="sub-main">
-          <div class ="buttons">
-            <div><a href="#" class="header-divs" style="text-decoration: none;"><div class="beta-home-button">Login</div></a></div>
-            <div style="margin-left: 9%;"><a style="text-decoration: none;" href="/spp" class="header-divs"><div class="beta-home-button">Register</div></a></div>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
 
-    <nav class="social">
-      <ul>
-          <li><a href="https://twitter.com/dtu_ieee" target="_blank">Twitter <i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.facebook.com/TroikaIeeeDTU/" target="_blank">Facebook <i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://www.youtube.com/user/ieeedtu" target="_blank">Youtube <i class="fa fa-youtube"></i></a></li>
-          <li><a href="https://www.linkedin.com/company/7604169/" target="_blank">LinkedIn <i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://instagram.com/ieee.dtu" target="_blank">Instagram <i class="fa fa-instagram"></i></a></li>
-      </ul>
-    </nav>
-    
-    <div class="about" id="about">
+  <div id="costumModal5" class="modal"  data-easein="flipBounceYIn"  tabindex="-1" role="dialog" aria-labelledby="costumModalLabel" aria-hidden="true">
+      <div class="modal-dialog" style="width: 80%; opacity: 1;" >
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                      ×
+                  </button>
+                  <h4 class="modal-title">
+                      About Us
+                  </h4>
+              </div>
+              <div class="modal-body">
+<div class="about" id="about">
       <div class="background-image-about"></div>
       <div class="content">
-        <h1 class="about-troika">About Us</h1><br>
         <div>
-            <h1 class="about-us">THE LEGACY...</h1><br>
-            <h4 class="about-us-text">IEEE DTU, one of the most active student branch of IEEE proudly presents it's annual technical fest TROIKA 2017. Troika, which is Russian for "a set of three", represents the three pillars of engineering: Approach, Theory and Practice. With an array of competitive events covering all aspects of technical aptitude, Troika is one of the most eagerly awaited Techfests of North India and attracts participation from all over the country. Continuing its rich legacy, Troika 2017 aspires to be an exhibition of, and a platform for young engineering talent.</h4>
+          <h1 class="about-us">The Legacy : TROIKA </h1><br>
+          <h4 class="about-us-text">IEEE DTU, one of the most active student branch of IEEE proudly presents it's annual technical fest TROIKA 2018. Troika, which is Russian for "a set of three", represents the three pillars of engineering: Approach, Theory and Practice. With an array of competitive events covering all aspects of technical aptitude, Troika is one of the most eagerly awaited Techfests of North India and attracts participation from all over the country. Continuing its rich legacy, Troika 2018 aspires to be an exhibition of, and a platform for young engineering talent.</h4>
         </div>
-        <div class="row">
-            <h1 class="about-us" style="text-align: center;">MEET THE TEAM</h1><br><br>
-          <div class="column">
-            <div class="card">
-              <img src="./img/ChandanSir.jpg" alt="Jane" style="width:100%">
-              <div class="container1">
-                <h2>CHANDAN BARNWAL</h2>
-                <p class="title">CHAIRPERSON, IEEE DTU</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-              <div class="card">
-                <img src="./img/VicechairpersonAryanMittal.jpg" alt="John" style="width:100%">
-                <div class="container1">
-                  <h2>ARYAN MITTAL</h2>
-                  <p class="title">VICE CHAIRPERSON, IEEE DTU</p>
-                </div>
-              </div>
-            </div>
-        
-          <div class="column">
-            <div class="card">
-              <img src="./img/Rashigarggeneralsecretary.jpg" alt="Mike" style="width:100%">
-              <div class="container1">
-                <h2>RASHI GARG</h2>
-                <p class="title">GENERAL SCRETARY, IEEE DTU</p>
-              </div>
-            </div>
-          </div>
+        <p><h4 class="about-us-text">
+        The events in association with IEEE Women In Engineering, DTU aim to promote the love for innovation and technology specially among women by having special prizes for all girls team, etc.
+      </h4></p>
+        <div>
+          <h1 class="about-us">About IEEE </h1><br>
+          <h4 class="about-us-text">
+              IEEE is the world’s largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity. IEEE and its members inspire a global community through IEEE’s highly cited publications, conferences, technology standards, and professional and educational activities.
+              <br><br>
+              IEEE, pronounced “Eye-triple-E,” stands for the Institute of Electrical and Electronics Engineers. The association is chartered under this name and it is the full legal name.
+              <br><br>
+              However, as the world’s largest technical professional association, IEEE’s membership has long been composed of engineers, scientists, and allied professionals. These include computer scientists, software developers, information technology professionals, physicists, medical doctors, and many others in addition to IEEE’s electrical and electronics engineering core. For this reason the organization no longer goes by the full name, except on legal business documents, and is referred to simply as IEEE.
+          </h4>
         </div>
+        <div>
+            <h1 class="about-us">About IEEE DTU </h1><br>
+            <h4 class="about-us-text">
+                IEEE DTU Student Branch is the oldest as well as the largest student branch in Delhi Section of Region 10. It is the recipient of the prestigious Darrel Chong award, silver medal for the past consecutive 2 years for its exemplary student activities. This prestigious society has been longstanding since its inception on 1st August 1983. With the aim of instilling scientific temperament in the student community through a plethora of activities around the year it boasts of a colorful history spanning over three decades. Treading towards the path of development, the student branch regularly organizes field trips, industrial visits, technical paper presentation sessions, quizzes and conferences. Today, IEEE DTU claims to have under its wing a massive strength of more than 450 student members, working actively throughout the year.
+            </h4>
+          </div>
       </div>
-    </div>
-
-    <div class="contact" id="contact">
-      <div class="background-image-contact"></div>
+      </div>
+              </div>
+          </div>
+      </div>
+  </div>
+ <div id="costumModal7" class="modal"  data-easein="flipBounceYIn"  tabindex="-1" role="dialog" aria-labelledby="costumModalLabel" aria-hidden="true">
+      <div class="modal-dialog" style="width: 80%; opacity: 0.5;" >
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                      ×
+                  </button>
+              </div>
+              <div class="modal-body" >
+<div class="about" id="about">
+      <div class="background-image-about"></div>
       <div class="content">
-        <h1 class="contact-head">Contact Us</h1><br><br>
-        <div class="container">
+          <div class="contact" id="contact">
+      <div class="content" style="width: 100%; margin: 0 auto;">
+        <h1 class="about-us" style="padding-top:50px;">Contact</h1><br><br>
+
+        <div class="container" align="center">
           <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-md-12">
+
+            <div id="ops" class="col-lg-6 col-md-6 col-sm-6 col-md-12">
               <h2 class="contact-us">Mail Us:</h2>
-              <h3 class="contact-us-sub"><a href="mailto:contact@ieeedtu.com"> contact@ieeedtu.com </a></h3>
+              <h3 class="contact-us-sub"><a href="mailto:contact@ieeedtu.com" style="color:skyblue"> contact@ieeedtu.com </a></h3>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-md-12" >
+            <div id="opss" class="col-lg-6 col-md-6 col-sm-6 col-md-12" >
               <h2 class="contact-us">Reach Us at:</h2>
               <address class="contact-us-sub">Delhi Technological University,<br>
                 Shahbad Daulatpur,<br>
                 Main Bawana Road,<br>
                 Delhi, 110042</address>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-md-12" class="g-maps" id="map"></div>
 
+            <div class="col-lg-6 col-md-6 col-sm-6 col-md-12" class="g-maps" id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6995.957599070029!2d77.11125079870604!3d28.750049929140047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01212a67c965%3A0x87d470ca1c30d1b0!2sDelhi+Technological+University!5e0!3m2!1sen!2sin!4v1513710372791" width="100%" height="440px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="container-fluid foot text-center foot">
-      <p style="color: #66fcf1;">All Rights Reserved.<br>Designed By<br><a href="https://ieeedtu.com/">IEEE DTU</a></p> 
-    </footer>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgNuEWm9FdsqrV_Zcu40KJ1b87OcVRuwo&callback=initMap"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="./javaScript/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      </div>
+      </div>
+      <p id ="blabla" style="color:white;">Contact Us @</p> <a href="https://twitter.com/dtu_ieee" target="_blank">Twitter </a>
+          <a href="https://www.facebook.com/TroikaIeeeDTU/" target="_blank">| Facebook </a>
+          <a href="https://www.youtube.com/user/ieeedtu" target="_blank">| Youtube </a>
+          <a href="https://www.linkedin.com/company/7604169/" target="_blank">| LinkedIn </a>
+          <a href="https://www.instagram.com/ieee.dtu/" target="_blank">| Instagram </a>
+
+
+              </div>
+                  </div>
+         </div>
+  </div>
+
+
+
+  <a-scene>
+    <a-assets timeout="25000">
+      <a-asset-item id="earth" src="./assets/earth-obj/earth.gltf"></a-asset-item>
+      <a-asset-item id="moon-obj" src="./assets/Moon_3D_Model/moon.obj"></a-asset-item>
+      <a-asset-item id="moon-mtl" src="./assets/Moon_3D_Model/moon.mtl"></a-asset-item>
+      <a-asset-item id="ship-obj" src="./assets/ship/rocket1.obj"></a-asset-item>
+      <a-asset-item id="ship-mtl" src="./assets/ship/rocket1.mtl"></a-asset-item>
+      <a-asset-item id="sat" src="./assets/nasa-aqua-satellite-obj/nasa-aqua-satellite.gltf"></a-asset-item>
+      <a-asset-item id="mars" src="./assets/mars-obj/mars.gltf"></a-asset-item>
+      <a-asset-item id="oat" src="./assets/dtu-oat/final.gltf"></a-asset-item>
+      <a-asset-item id="sun" src="./assets/sun-obj/sun.gltf"></a-asset-item>
+    </a-assets>
+
+    <a-sky src="./assets/space.jpg">
+    </a-sky>
+    <a-sound src="src: url(backgroundfinal.mp3)" autoplay="true" loop="true" position="-1 0.75 -6"></a-sound>
+    <a-entity light="type: ambient; color: #FFFFFF"></a-entity>
+    <a-entity gltf-model="#earth" position="8 1.5 -4" scale="1.5 1.5 1.5">
+      <a-animation attribute="rotation"
+             dur="30000"
+             to="0 360 0"
+             repeat="indefinite"></a-animation>
+    </a-entity>
+    <a-entity id="moon" obj-model="obj: #moon-obj; mtl: #moon-mtl" scale="0.003 0.003 0.003">
+    </a-entity>
+    <a-entity id="ship" obj-model="obj: #ship-obj; mtl: #ship-mtl" scale="0.025 0.025 0.025" rotation="-90 0 0">
+      <a-animation attribute="position"
+             dur="5000"
+             from="6.06 2.4 2.5"
+             to="6.06 2.4 -4.5"
+             direction='alternate-reverse'
+             repeat="indefinite"></a-animation>
+    </a-entity>
+    <a-entity id="satellite" gltf-model="#sat" scale="0.08 0.08 0.08" position="11 1.5 1" rotation="0 -30 0">
+    </a-entity>
+    <a-entity id="mars" gltf-model="#mars" position="-13 1.5 -13" scale="1.6 1.6 1.6">
+      <a-animation attribute="rotation"
+             dur="10000"
+             to="0 360 0"
+             repeat="indefinite"></a-animation>
+    </a-entity>
+    <a-entity id="oatdtu" gltf-model="#oat" position="-1 0.75 -4" scale="0.008 0.008 0.008" rotation="270 0 270">
+    </a-entity>
+
+    <a-entity id="sun" gltf-model="#sun" position="150 1.35 -3" scale="0.15 0.15 0.15">
+    </a-entity>
+
+    <a-entity camera look-controls wasd-controls position="-2 0 0" rotation="0 -100 0" id="world">
+    </a-entity>
+
+  </a-scene>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+      document.querySelector('a-assets').addEventListener( 'loaded', () => {
+        console.log( 'a-assets loaded' );
+        jQuery(".loader").fadeOut(500)});
+  </script>
+
+  <script>
+    //var container = document.querySelector('.container');
+    var jetBubbles = document.getElementsByClassName('jetBubble');
+    var rocketManSVG = document.querySelector('.rocketManSVG');
+    var shakeGroup = document.querySelector('.shakeGroup');
+    var star = document.querySelector('.star');
+    var satellite = document.querySelector('.satellite');
+    var astronaut = document.querySelector('.astronaut');
+    var starContainer = document.querySelector('.starContainer');
+    var badgeLink = document.querySelector('#badgeLink');
+    /*
+    TweenMax.set(container, {
+      position:'absolute',
+      top:'50%',
+      left:'50%',
+      xPercent:-50,
+      yPercent:-50
+    }) */
+
+    TweenMax.to(astronaut, 0.05, {
+      y:'+=4',
+      repeat:-1,
+      yoyo:true
+    })
+    var mainTimeline = new TimelineMax({repeat:-1}).seek(100);
+    var mainSpeedLinesTimeline = new TimelineMax({repeat:-1, paused:false});
+
+    mainTimeline.timeScale(2);
+
+    function createJets(){
+      TweenMax.set(jetBubbles, {
+        attr:{
+          r:'-=5'
+        }
+      })
+     //jet bubbles
+      for(var i = 0; i < jetBubbles.length; i++){
+        var jb = jetBubbles[i];
+        var tl = new TimelineMax({repeat:-1,repeatDelay:Math.random()}).timeScale(4);
+        tl.to(jb, Math.random() + 1 , {
+          attr:{
+            r:'+=15'
+          },
+          ease:Linear.easeNone
+        })
+        .to(jb, Math.random() + 1 , {
+          attr:{
+            r:'-=15'
+          },
+          ease:Linear.easeNone
+        })
+
+        mainTimeline.add(tl, i/4)
+      }
+      //speed lines
+      for(var i = 0; i < 7; i++){
+        var sl = document.querySelector('#speedLine' + i);
+
+        var stl = new TimelineMax({repeat:-1, repeatDelay:Math.random()});
+        stl.set(sl, {
+          drawSVG:false
+        })
+        .to(sl, 0.05, {
+          drawSVG:'0% 30%',
+          ease:Linear.easeNone
+        })
+        .to(sl, 0.2, {
+          drawSVG:'70% 100%',
+          ease:Linear.easeNone
+        })
+        .to(sl, 0.05, {
+          drawSVG:'100% 100%',
+          ease:Linear.easeNone
+        })
+         .set(sl, {
+          drawSVG:'-1% -1%'
+        });
+
+        mainSpeedLinesTimeline.add(stl, i/23);
+    }
+      //stars
+      for(var i = 0; i < 7; i++){
+
+        var sc = star.cloneNode(true);
+        starContainer.appendChild(sc);
+        var calc = (i+1)/2;
+
+        TweenMax.fromTo(sc, calc, {
+          x:Math.random()*600,
+          y:-30,
+          scale:3 - calc
+        }, {
+          y:(Math.random() * 100) + 600,
+          repeat:-1,
+          repeatDelay:1,
+          ease:Linear.easeNone
+        })
+      }
+
+      rocketManSVG.removeChild(star);
+    }
+
+
+    var satTimeline = new TimelineMax({repeat:-1});
+    satTimeline.to(satellite, 12, {
+      rotation:360,
+      transformOrigin:'50% 50%',
+      ease:Linear.easeNone
+    })
+
+    TweenMax.staggerTo('.pulse', 0.8, {
+      alpha:0,
+      repeat:-1,
+      ease:Power2.easeInOut,
+      yoyo:false
+    }, 0.1);
+
+    TweenMax.staggerTo('.satellitePulse', 0.8, {
+      alpha:0,
+      repeat:-1,
+      ease:Power2.easeInOut,
+      yoyo:false
+    }, 0.1)
+
+    createJets();
+
+    //TweenMax.globalTimeScale(0.50)
+  </script>
+
+  <script>
+    var t = 0;
+    function render() {
+      t += 0.002;
+      requestAnimationFrame(render);
+      moon.setAttribute('position', (15*Math.cos(t)+8)+ ' 1.5 ' +(11*Math.sin(t)-4));
+      // ship.setAttribute('position',  '6.06 2.2' +(Math.sin(t)-1.72));
+      world.setAttribute('position', (3.25*Math.cos(t-3.5)+1)+ ' 2 ' +(3.25*Math.sin(t-3.5)));
+          }
+    render()
+  </script>
+
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <!--<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js'></script>
+
+  <script src="./javaScript/modalScript.js"></script>
 </body>
 </html>

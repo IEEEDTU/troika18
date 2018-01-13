@@ -1,0 +1,59 @@
+# Exported from 3D Builder
+
+newmtl mmmm
+Kd 0.090196 0.105882 0.176471
+
+newmtl White
+Kd 1.000000 1.000000 1.000000
+map_Kd troika9.png
+
+newmtl Material.007
+Kd 0.640000 0.484217 0.221646
+
+newmtl a
+Kd 0.400000 0.329412 0.176471
+
+newmtl Material.008
+Kd 0.113008 0.048248 0.000000
+
+newmtl Material.008
+Kd 0.113008 0.048248 0.000000
+
+newmtl b0b0b0
+Kd 0.690196 0.022740 0.028549
+
+newmtl plateMaterial
+Kd 0.355949 0.000000 0.002628
+
+newmtl plateMaterial
+Kd 0.355949 0.000000 0.002628
+
+newmtl plateMaterial
+Kd 0.355949 0.000000 0.002628
+
+newmtl b0b0b0
+Kd 0.690196 0.022740 0.028549
+
+newmtl mmmm
+Kd 0.090196 0.105882 0.176471
+
+newmtl Material.001
+Kd 0.069509 0.069509 0.069509
+
+newmtl b0b0b0
+Kd 0.690196 0.022740 0.028549
+
+newmtl mmmm
+Kd 0.090196 0.105882 0.176471
+
+newmtl mmm
+Kd 0.207843 0.207843 0.286275
+
+newmtl ab
+Kd 0.678431 0.858824 0.811765
+
+newmtl Material
+Kd 0.455962 0.780663 0.537974
+
+newmtl mmmm
+Kd 0.090196 0.105882 0.176471
